@@ -14,5 +14,6 @@ public class TempScript : MonoBehaviour
     void Update()
     {
         //Comment
+        //Victors riks tunga comment
     }
 }
