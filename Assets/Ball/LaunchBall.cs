@@ -4,16 +4,12 @@ using UnityEngine;
 
 public class LaunchBall : MonoBehaviour
 {
-
-    public Vector2 BallVelocity;
-   
-    
-
     [HideInInspector]
     public bool CanFire;
 
-    Rigidbody2D BallRb2D;
+    public float LaunchForce;
 
+    Rigidbody2D BallRb2D;
     PlayerLaunchAction pla;
 
     private void Awake()
@@ -30,7 +26,7 @@ public class LaunchBall : MonoBehaviour
 
     void Launch()
     {
-        Vector2 vel = transform.position - pla.transform.position;
+        Vector2 vel = (transform.position - pla.transform.position) * LaunchForce;
         if (pla != null)
         {
             if (pla.hasLaunched == true && CanFire == true)

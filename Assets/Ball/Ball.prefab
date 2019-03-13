@@ -47,8 +47,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e521842d30b759c49ae0bf6aae27aa91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
   CanFire: 0
+  LaunchForce: 0
 --- !u!212 &4147722008396365158
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -143,7 +143,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 7816717489993457265}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: cd387c52486c3cd478adbd1cbe3cb1af, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
