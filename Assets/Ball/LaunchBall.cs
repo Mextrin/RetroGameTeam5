@@ -14,16 +14,17 @@ public class LaunchBall : MonoBehaviour
     private float time;
 
     Rigidbody2D BallRb2D;
-    PhysicsMaterial2D PhysMat;
+
     PlayerLaunchAction PlayerLaAction;
+    HitBehaviour EnHitBehaviour;
     #endregion Variabels
 
 
     private void Awake()
     {
         BallRb2D = GetComponent<Rigidbody2D>();
-        PhysMat = GetComponent<PhysicsMaterial2D>();
         PlayerLaAction = GameObject.FindObjectOfType<PlayerLaunchAction>()?.GetComponent<PlayerLaunchAction>();
+        EnHitBehaviour = GameObject.FindObjectOfType<HitBehaviour>()?.GetComponent<HitBehaviour>();
     }
 
     private void Update()
@@ -75,6 +76,16 @@ public class LaunchBall : MonoBehaviour
         {
             CanFire = false;
             /*Debug.Log("Player NOT detected");*/
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if ((collision.gameObject == EnHitBehaviour.gameObject) && EnHitBehaviour.gameObject != null)
+        {
+            Debug.Log("Enemy Hit");
+            EnHitBehaviour.isHit = true;
+            EnHitBehaviour.timeDown = EnHitBehaviour.resetTime;
         }
     }
 
