@@ -13,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
     public bool onGround;
     private bool flipped;
     private Sprite sprite;
+    [SerializeField] private int damage;
+    private HitBehaviour _hitBehaviour;
 
     private void Awake()
     {
@@ -57,11 +59,24 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (collision.collider.GetComponent<HitBehaviour>() != null)
+        {
+            _hitBehaviour = collision.collider.GetComponent<HitBehaviour>();
+
+            if (collision.collider.CompareTag("Enemy") && onGround == false && _hitBehaviour.isHit)
+            {
+                print("has hit enemy");
+                _hitBehaviour.hc.DamageTaken(damage);
+            }
+
+        }
         if (collision.gameObject.layer == 8)
         {
             Debug.Log("On Ground");
             onGround = true;
         }
+
+       
     }
 
     private void OnCollisionExit2D(Collision2D collision)
