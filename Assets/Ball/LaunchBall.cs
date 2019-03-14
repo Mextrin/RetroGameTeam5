@@ -45,7 +45,7 @@ public class LaunchBall : MonoBehaviour
                 BallRb2D.bodyType = RigidbodyType2D.Dynamic;
                 BallRb2D.velocity += vel;
 
-                Invoke("BallVelDecreasment", time);
+               /* Invoke("BallVelDecreasment", time);*/
             }
         }
         else

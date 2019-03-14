@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     Rigidbody2D rb2D;
+    SpriteRenderer sR;
 
     public float Speed;
     public float JumpForce;
@@ -15,7 +16,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void Awake()
     {
-        rb2D = GetComponent<Rigidbody2D>();    
+        rb2D = GetComponent<Rigidbody2D>();
+        sR = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -30,7 +32,15 @@ public class PlayerMovement : MonoBehaviour
         float Delta = Speed * Time.deltaTime;
         float MoveX = Input.GetAxis("Horizontal") * Delta;
 
-        transform.Translate(new Vector2(MoveX, 0));
+        transform.Translate(new Vector2(-MoveX, 0));
+        if (MoveX > 0f)
+        {
+            sR.flipX = false;
+        }
+        else if (MoveX < 0f)
+        {
+            sR.flipX = true;
+        }
     }
 
     void Jump()
@@ -40,7 +50,6 @@ public class PlayerMovement : MonoBehaviour
         if (Jump && onGround == true)
         {
             rb2D.AddForce(Vector2.up * JumpForce, ForceMode2D.Impulse);
-            
         }
     }
 
