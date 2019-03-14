@@ -14,6 +14,7 @@ public class LaunchBall : MonoBehaviour
     private float time;
 
     Rigidbody2D BallRb2D;
+    PhysicsMaterial2D PhysMat;
     PlayerLaunchAction PlayerLaAction;
     #endregion Variabels
 
@@ -21,6 +22,7 @@ public class LaunchBall : MonoBehaviour
     private void Awake()
     {
         BallRb2D = GetComponent<Rigidbody2D>();
+        PhysMat = GetComponent<PhysicsMaterial2D>();
         PlayerLaAction = GameObject.FindObjectOfType<PlayerLaunchAction>()?.GetComponent<PlayerLaunchAction>();
     }
 
@@ -39,8 +41,10 @@ public class LaunchBall : MonoBehaviour
             if (PlayerLaAction.hasLaunched == true && CanFire == true)
             {
                 Debug.Log("LAUNCH!");
+                BallRb2D.gravityScale = 1;
                 BallRb2D.bodyType = RigidbodyType2D.Dynamic;
                 BallRb2D.velocity += vel;
+
                 Invoke("BallVelDecreasment", time);
             }
         }
@@ -52,7 +56,8 @@ public class LaunchBall : MonoBehaviour
 
     void BallVelDecreasment()
     {
-        BallRb2D.drag = 100;
+//         PhysMat.friction = 5;
+//         PhysMat.bounciness = 0;
         /*Debug.Log("Slowed down");*/
     }
 
