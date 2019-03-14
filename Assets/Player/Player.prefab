@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5254914386167154553}
   - component: {fileID: 8311702056877469000}
+  - component: {fileID: 3088543934244170339}
   - component: {fileID: 5986623680783478613}
   - component: {fileID: 5388827868173139862}
   - component: {fileID: 5978044550486781406}
@@ -50,6 +51,20 @@ MonoBehaviour:
   Speed: 10
   JumpForce: 5
   onGround: 0
+--- !u!114 &3088543934244170339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370977784642122641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94d89e33ca2be9c42b620b2cc80f46e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 3
+  Damage: 1
 --- !u!114 &5986623680783478613
 MonoBehaviour:
   m_ObjectHideFlags: 0

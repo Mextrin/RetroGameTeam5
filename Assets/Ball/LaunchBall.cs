@@ -41,7 +41,7 @@ public class LaunchBall : MonoBehaviour
         {
             if (PlayerLaAction.hasLaunched == true && CanFire == true)
             {
-                Debug.Log("LAUNCH!");
+                /*Debug.Log("LAUNCH!");*/
                 BallRb2D.gravityScale = 1;
                 BallRb2D.bodyType = RigidbodyType2D.Dynamic;
                 BallRb2D.velocity += vel;
@@ -81,9 +81,9 @@ public class LaunchBall : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if ((collision.gameObject == EnHitBehaviour.gameObject) && EnHitBehaviour.gameObject != null)
+        if (EnHitBehaviour != null && (collision.gameObject == EnHitBehaviour.gameObject))
         {
-            Debug.Log("Enemy Hit");
+            /*Debug.Log("Enemy Hit");*/
             EnHitBehaviour.isHit = true;
             EnHitBehaviour.timeDown = EnHitBehaviour.resetTime;
         }

@@ -9,10 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1905831108174438752}
+  - component: {fileID: 1437967581582858754}
+  - component: {fileID: 1620994942827344055}
   - component: {fileID: 1905831108174438755}
   - component: {fileID: 1905831108174438754}
   - component: {fileID: 1905831108174438781}
-  - component: {fileID: 1437967581582858754}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -34,6 +35,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1437967581582858754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905831108174438780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0d5ceb0951629145b4661d78774b5be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isHit: 0
+  timeDown: 3
+  resetTime: 3
+--- !u!114 &1620994942827344055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905831108174438780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94d89e33ca2be9c42b620b2cc80f46e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 1
+  Damage: 1
 --- !u!212 &1905831108174438755
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -134,17 +164,3 @@ PolygonCollider2D:
       - {x: -0.114999995, y: -0.16}
       - {x: 0.095, y: -0.16}
       - {x: 0.095, y: 0.08}
---- !u!114 &1437967581582858754
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1905831108174438780}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0d5ceb0951629145b4661d78774b5be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isHit: 0
-  timeDown: 3
