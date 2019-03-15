@@ -7,7 +7,7 @@ public class HealthComponent : MonoBehaviour
     public int Health;
     public int Damage;
 
-    void DamageTaken()
+    public void DamageTaken()
     {
         Damage -= Health;
         Debug.Log(Health.ToString());

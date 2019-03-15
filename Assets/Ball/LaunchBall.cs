@@ -18,6 +18,7 @@ public class LaunchBall : MonoBehaviour
     PlayerLaunchAction PlayerLaAction;
     HitBehaviour EnHitBehaviour;
     #endregion Variabels
+    AIBehavior MyAI;
 
 
     private void Awake()
@@ -86,6 +87,10 @@ public class LaunchBall : MonoBehaviour
             /*Debug.Log("Enemy Hit");*/
             EnHitBehaviour.isHit = true;
             EnHitBehaviour.timeDown = EnHitBehaviour.resetTime;
+        }
+        else if(collision.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(MyAI.gameObject);
         }
     }
 
