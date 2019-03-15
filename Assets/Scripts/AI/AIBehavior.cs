@@ -17,14 +17,7 @@ public class AIBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(IsFacingRight())
-        {
-            myRigidBody.velocity = new Vector2(moveSpeed, 0f);
-        }
-        else
-        {
-            myRigidBody.velocity = new Vector2(-moveSpeed, 0f);
-        }
+        Moving2D();
     }
 
     bool IsFacingRight()
@@ -42,6 +35,18 @@ public class AIBehavior : MonoBehaviour
         if(collision.gameObject.name == "Player")
         {
             PlayerHealthComp.DamageTaken();
+        }
+    }
+
+    public void Moving2D()
+    {
+        if (IsFacingRight())
+        {
+            myRigidBody.velocity = new Vector2(moveSpeed, 0f);
+        }
+        else
+        {
+            myRigidBody.velocity = new Vector2(-moveSpeed, 0f);
         }
     }
 }
