@@ -5,8 +5,8 @@ using UnityEngine;
 public class LaunchBall : MonoBehaviour
 {
     //#region Variabels
-    //[HideInInspector]
-    //public bool CanFire;
+    [HideInInspector]
+    public bool CanFire;
     //
     //[SerializeField]
     //private float LaunchForce;
