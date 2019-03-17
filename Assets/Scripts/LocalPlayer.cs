@@ -35,27 +35,27 @@ public class LocalPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Moving
         if (input.ConnectedController)
         {
+            //Moving
             float moveHorizontal = Input.GetAxis(input.Horizontal) *speed * Time.deltaTime;
         
             transform.Translate(new Vector2(moveHorizontal, 0));
             if (moveHorizontal > 0) spriteRenderer.flipX = false;
             else if (moveHorizontal < 0) spriteRenderer.flipX = true;
-        }
 
-        //Jumping
-        print(onGround);
-        bool jump = Input.GetButtonDown(input.Jump);
-        if (jump && onGround) rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            //Jumping
+            print(onGround);
+            bool jump = Input.GetButtonDown(input.Jump);
+            if (jump && onGround) rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         
-        //Launching
-        if (ball)
-        {
-            if (Input.GetButtonDown(input.Action) && ball.CanFire)
+            //Launching
+            if (ball)
             {
-                hasLaunched = true;
+                if (Input.GetButtonDown(input.Action) && ball.CanFire)
+                {
+                    hasLaunched = true;
+                }
             }
         }
     }

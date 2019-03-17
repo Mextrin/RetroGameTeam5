@@ -31,8 +31,8 @@ public class ControllerInput : MonoBehaviour
             //See if any controller activates
             for (int i = 1; i <= 2; i++)
             {
-                print(i + " " + Input.GetButtonDown("Controller" + i + "A"));
-                if ((!assignedControllers.Contains(i)) && Input.GetButtonDown("Controller" + i + "A"))
+                print(i + " " + Input.GetButtonDown("Controller" + i + "Action"));
+                if ((!assignedControllers.Contains(i)) && Input.GetButtonDown("Controller" + i + "Action"))
                 {
                     controllerID = i;
                     assignedControllers.Add(i);
