@@ -10,17 +10,16 @@ public class LaunchBall : MonoBehaviour
 
     [SerializeField] bool hasLaunched;
     [SerializeField] private float LaunchForce;
-    [SerializeField] private float time;
 
     Rigidbody2D BallRb2D;
-    PlayerLaunchAction PlayerLaAction;
+    HitBehaviour hitBehaviour;
     #endregion Variabels
     
     
     private void Awake()
     {
+        hitBehaviour = GameObject.FindObjectOfType<HitBehaviour>()?.GetComponent<HitBehaviour>();
         BallRb2D = GetComponent<Rigidbody2D>();
-        PlayerLaAction = GameObject.FindObjectOfType<PlayerLaunchAction>()?.GetComponent<PlayerLaunchAction>();
     }
     
     private void Update()
@@ -31,10 +30,9 @@ public class LaunchBall : MonoBehaviour
     public void Launch(Vector3 targetPosition)
     {
         Vector2 vel = Vector3.Normalize(transform.position - targetPosition) * LaunchForce;
-        time = 10;
-    
 
-            float distance = Vector3.Distance(targetPosition, transform.position);
+        float distance = Vector3.Distance(targetPosition, transform.position);
+
         if (distance <= 1)
         {
             Debug.Log("LAUNCH!");
@@ -42,41 +40,16 @@ public class LaunchBall : MonoBehaviour
             BallRb2D.bodyType = RigidbodyType2D.Dynamic;
             BallRb2D.velocity += vel;
 
-            /*Invoke("BallVelDecreasment", 3);*/
         }
-
-
     }
     
-    void BallVelDecreasment()
-    {
-//         PhysMat.friction = 5;
-//         PhysMat.bounciness = 0;
-        /*Debug.Log("Slowed down");*/
-    }
-    
-      private void OnTriggerEnter2D(Collider2D collision)
-      {
-        
-      }
-//      private void OnTriggerExit2D(Collider2D collision)
-//      {
-//          if (collision.gameObject == PlayerLaAction.gameObject)
-//          {
-//              CanFire = false;
-//              /*Debug.Log("Player NOT detected");*/
-//          }
-//      }
-    
-//     private void OnCollisionEnter2D(Collision2D collision)
-//     {
-//         if (EnHitBehaviour != null && (collision.gameObject == EnHitBehaviour.gameObject))
-//         {
-//             /*Debug.Log("Enemy Hit");*/
-//             EnHitBehaviour.isHit = true;
-//             EnHitBehaviour.timeDown = EnHitBehaviour.resetTime;
-//         }
-//     } 
+     private void OnCollisionEnter2D(Collision2D collision)
+     {
+        if (collision.gameObject.layer == 9)
+        {
+            hitBehaviour.HasBeenHit(true);
+        }
+     } 
     
      private void OnGUI()
      {
