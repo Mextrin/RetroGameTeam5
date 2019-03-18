@@ -5,10 +5,11 @@ using UnityEngine;
 public class HealthComponent : MonoBehaviour
 {
     public int Health;
+    public int Damage;
 
-    public void DamageTaken(int damage)
+    void DamageTaken()
     {
-        Health -= damage;
+        Damage -= Health;
         Debug.Log(Health.ToString());
     }
 
