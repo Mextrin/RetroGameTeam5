@@ -44,11 +44,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1905831108174438780}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0d5ceb0951629145b4661d78774b5be, type: 3}
+  m_Script: {fileID: 11500000, guid: de52f0c5e360e9f4fa1a092aa3f46a3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isHit: 0
-  timeDown: 3
+  timeDown: 0
   resetTime: 3
 --- !u!114 &1620994942827344055
 MonoBehaviour:

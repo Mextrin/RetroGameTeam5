@@ -11,7 +11,7 @@ public class LocalPlayer : MonoBehaviour
     [Header("Movement")]
     [SerializeField] float speed = 5f;
     [SerializeField] float jumpForce = 6.5f;
-    [SerializeField] bool onGround;
+    [SerializeField] public bool onGround;
 
 
     bool flipped;
