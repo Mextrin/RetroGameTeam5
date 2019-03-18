@@ -28,6 +28,7 @@ public class LocalPlayer : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         rigidbody = GetComponent<Rigidbody2D>();
         input = GetComponent<ControllerInput>();
+        
     }
 
     // Update is called once per frame

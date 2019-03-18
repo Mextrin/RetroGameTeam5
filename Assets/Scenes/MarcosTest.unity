@@ -823,17 +823,22 @@ PrefabInstance:
     - target: {fileID: 1974871236936848114, guid: 1392fb47a76db944b80881993ea14ccd,
         type: 3}
       propertyPath: m_LinearDrag
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1974871236936848114, guid: 1392fb47a76db944b80881993ea14ccd,
         type: 3}
       propertyPath: m_AngularDrag
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1974871236936848114, guid: 1392fb47a76db944b80881993ea14ccd,
         type: 3}
       propertyPath: m_GravityScale
-      value: 1
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1974871236936848114, guid: 1392fb47a76db944b80881993ea14ccd,
+        type: 3}
+      propertyPath: m_Mass
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1392fb47a76db944b80881993ea14ccd, type: 3}
@@ -1091,6 +1096,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 1905831108174438780, guid: c933d844dcb63934eb3e7428b6469e63,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1905831108174438752, guid: c933d844dcb63934eb3e7428b6469e63,
         type: 3}
