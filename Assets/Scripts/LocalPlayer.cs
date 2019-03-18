@@ -11,7 +11,7 @@ public class LocalPlayer : MonoBehaviour
     [Header("Movement")]
     [SerializeField] float speed = 5f;
     [SerializeField] float jumpForce = 6.5f;
-    [SerializeField] public bool onGround;
+    [HideInInspector] public bool onGround;
 
 
     bool flipped;
@@ -37,7 +37,7 @@ public class LocalPlayer : MonoBehaviour
         if (input.ConnectedController)
         {
             //Moving
-            float moveHorizontal = Input.GetAxis(input.Horizontal) *speed * Time.deltaTime;
+            float moveHorizontal = Input.GetAxis(input.Horizontal) * speed * Time.deltaTime;
 
             rigidbody.velocity = new Vector2(moveHorizontal * 100, rigidbody.velocity.y);
             //transform.Translate(new Vector2(moveHorizontal, 0));
