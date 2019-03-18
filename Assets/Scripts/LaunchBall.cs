@@ -30,25 +30,22 @@ public class LaunchBall : MonoBehaviour
     
     public void Launch(Vector3 targetPosition)
     {
-        Vector2 vel = (transform.position - targetPosition) * LaunchForce;
+        Vector2 vel = Vector3.Normalize(transform.position - targetPosition) * LaunchForce;
         time = 10;
     
-        if (PlayerLaAction != null)
+
+            float distance = Vector3.Distance(targetPosition, transform.position);
+        if (distance <= 1)
         {
-            if (PlayerLaAction.hasLaunched == true && CanFire == true)
-            {
-                Debug.Log("LAUNCH!");
-                BallRb2D.gravityScale = 1;
-                BallRb2D.bodyType = RigidbodyType2D.Dynamic;
-                BallRb2D.velocity += vel;
-    
-               /* Invoke("BallVelDecreasment", time);*/
-            }
+            Debug.Log("LAUNCH!");
+            BallRb2D.gravityScale = 1;
+            BallRb2D.bodyType = RigidbodyType2D.Dynamic;
+            BallRb2D.velocity += vel;
+
+            /* Invoke("BallVelDecreasment", time);*/
         }
-        else
-        {
-            PlayerLaAction = null;
-        }
+
+
     }
     
     void BallVelDecreasment()
@@ -58,22 +55,18 @@ public class LaunchBall : MonoBehaviour
         /*Debug.Log("Slowed down");*/
     }
     
-//     private void OnTriggerEnter2D(Collider2D collision)
-//     {
-//         if (collision.gameObject == PlayerLaAction.gameObject)
-//         {
-//             CanFire = true;
-//             /*Debug.Log("Player detected");*/
-//         }
-//     }
-//     private void OnTriggerExit2D(Collider2D collision)
-//     {
-//         if (collision.gameObject == PlayerLaAction.gameObject)
-//         {
-//             CanFire = false;
-//             /*Debug.Log("Player NOT detected");*/
-//         }
-//     }
+      private void OnTriggerEnter2D(Collider2D collision)
+      {
+        
+      }
+//      private void OnTriggerExit2D(Collider2D collision)
+//      {
+//          if (collision.gameObject == PlayerLaAction.gameObject)
+//          {
+//              CanFire = false;
+//              /*Debug.Log("Player NOT detected");*/
+//          }
+//      }
     
 //     private void OnCollisionEnter2D(Collision2D collision)
 //     {
