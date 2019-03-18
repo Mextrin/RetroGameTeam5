@@ -14,7 +14,7 @@ public class LocalPlayer : MonoBehaviour
     [SerializeField] bool onGround;
 
     [Header("Ball")]
-    [SerializeField] bool hasLaunched;
+
 
     bool flipped;
     Sprite sprite;
@@ -45,7 +45,7 @@ public class LocalPlayer : MonoBehaviour
             else if (moveHorizontal < 0) spriteRenderer.flipX = true;
 
             //Jumping
-            print(onGround);
+            /*print(onGround);*/
             bool jump = Input.GetButtonDown(input.Jump);
             if (jump && onGround) rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         
@@ -54,7 +54,8 @@ public class LocalPlayer : MonoBehaviour
             {
                 if (Input.GetButtonDown(input.Action) && ball.CanFire)
                 {
-                    hasLaunched = true;
+                    print("fire");
+                    ball.Launch(transform.position);
                 }
             }
         }
