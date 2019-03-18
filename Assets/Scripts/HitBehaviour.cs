@@ -12,7 +12,7 @@ public class HitBehaviour : MonoBehaviour
 
     Rigidbody2D rigidbody;
 
-    private void Awakdw()
+    private void Awake()
     {
         timeDown = resetTime;
         rigidbody = GetComponent<Rigidbody2D>();
@@ -32,12 +32,12 @@ public class HitBehaviour : MonoBehaviour
         Invoke("FreezeTime", timeDown);
     }
 
-//     void FreezeTime()
-//     {
-//         Debug.Log("FREE");
-//         isFrozen = false;   
-//         rigidbody.bodyType = RigidbodyType2D.Dynamic;
-//     }
+    private void FreezeTime()
+    {
+        Debug.Log("FREE");
+        isFrozen = false;   
+        rigidbody.bodyType = RigidbodyType2D.Dynamic;
+    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -45,6 +45,7 @@ public class HitBehaviour : MonoBehaviour
         if (localPlayer && localPlayer.onGround == false && isFrozen == true)
         {
             Debug.Log("Hit by player");
+
         }
         
     }
