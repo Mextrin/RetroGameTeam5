@@ -21,25 +21,18 @@ public class LaunchBall : MonoBehaviour
         hitBehaviour = GameObject.FindObjectOfType<HitBehaviour>()?.GetComponent<HitBehaviour>();
         BallRb2D = GetComponent<Rigidbody2D>();
     }
-    
-    private void Update()
-    {
-         
-    }
-    
+
     public void Launch(Vector3 targetPosition)
     {
         Vector2 vel = Vector3.Normalize(transform.position - targetPosition) * LaunchForce;
-
         float distance = Vector3.Distance(targetPosition, transform.position);
 
         if (distance <= 1)
         {
             Debug.Log("LAUNCH!");
-            BallRb2D.gravityScale = 1;
+/*            BallRb2D.gravityScale = 1;*/
             BallRb2D.bodyType = RigidbodyType2D.Dynamic;
             BallRb2D.velocity += vel;
-
         }
     }
     
@@ -51,8 +44,8 @@ public class LaunchBall : MonoBehaviour
         }
      } 
     
-     private void OnGUI()
-     {
-         GUI.Label(new Rect(5f, 5f, 200f, 200f), ("Velocity: " + BallRb2D.velocity.ToString()));
-     }
+//      private void OnGUI()
+//      {
+//          GUI.Label(new Rect(5f, 5f, 200f, 200f), ("Velocity: " + BallRb2D.velocity.ToString()));
+//      }
 }

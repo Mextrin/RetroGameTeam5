@@ -520,11 +520,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
-    - target: {fileID: 1905831108174438780, guid: c933d844dcb63934eb3e7428b6469e63,
-        type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
     - target: {fileID: 1905831108174438752, guid: c933d844dcb63934eb3e7428b6469e63,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -580,6 +575,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1905831108174438755, guid: c933d844dcb63934eb3e7428b6469e63,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 72de0c64f2c6a498096698322c976a67,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c933d844dcb63934eb3e7428b6469e63, type: 3}
 --- !u!1 &1649730163
@@ -837,12 +838,12 @@ PrefabInstance:
     - target: {fileID: 6608228632877074333, guid: 1392fb47a76db944b80881993ea14ccd,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.05
+      value: -0.45
       objectReference: {fileID: 0}
     - target: {fileID: 6608228632877074333, guid: 1392fb47a76db944b80881993ea14ccd,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.5
+      value: -3.49
       objectReference: {fileID: 0}
     - target: {fileID: 6608228632877074333, guid: 1392fb47a76db944b80881993ea14ccd,
         type: 3}
@@ -889,6 +890,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6608228632877074333, guid: 1392fb47a76db944b80881993ea14ccd,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6608228632877074333, guid: 1392fb47a76db944b80881993ea14ccd,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 415772886052963612, guid: 1392fb47a76db944b80881993ea14ccd,
         type: 3}
       propertyPath: LaunchForce
@@ -918,6 +929,22 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mass
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4147722008396365158, guid: 1392fb47a76db944b80881993ea14ccd,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e48d2c695d1267b43bcfdcb6446d5bd6,
+        type: 3}
+    - target: {fileID: 6010312825028846734, guid: 1392fb47a76db944b80881993ea14ccd,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 6291793481599069905, guid: 1392fb47a76db944b80881993ea14ccd,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.67
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1392fb47a76db944b80881993ea14ccd, type: 3}

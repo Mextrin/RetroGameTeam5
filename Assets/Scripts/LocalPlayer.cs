@@ -11,15 +11,15 @@ public class LocalPlayer : MonoBehaviour
     [Header("Movement")]
     [SerializeField] float speed = 5f;
     [SerializeField] float jumpForce = 6.5f;
-    [SerializeField] public bool onGround;
+    [SerializeField] int damageDone = 1;
+    [HideInInspector] public bool onGround;
 
-
-    bool flipped;
     Sprite sprite;
 
     Rigidbody2D rigidbody;
     SpriteRenderer spriteRenderer;
     LaunchBall ball;
+    HealthComponent healthComponent;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +28,7 @@ public class LocalPlayer : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         rigidbody = GetComponent<Rigidbody2D>();
         input = GetComponent<ControllerInput>();
+        healthComponent = GetComponent<HealthComponent>();
         
     }
 
@@ -37,7 +38,7 @@ public class LocalPlayer : MonoBehaviour
         if (input.ConnectedController)
         {
             //Moving
-            float moveHorizontal = Input.GetAxis(input.Horizontal) *speed * Time.deltaTime;
+            float moveHorizontal = Input.GetAxis(input.Horizontal) * speed * Time.deltaTime;
 
             rigidbody.velocity = new Vector2(moveHorizontal * 100, rigidbody.velocity.y);
             //transform.Translate(new Vector2(moveHorizontal, 0));
@@ -45,16 +46,17 @@ public class LocalPlayer : MonoBehaviour
             else if (moveHorizontal > 0) spriteRenderer.flipX = true;
 
             //Jumping
-            /*print(onGround);*/
             bool jump = Input.GetButtonDown(input.Jump);
-            if (jump && onGround) rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            if (jump && onGround)
+            {
+                rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            }
         
             //Launching
             if (ball)
             {
                 if (Input.GetButtonDown(input.Action))
                 {
-                    print("fire");
                     ball.Launch(transform.position);
                 }
             }
