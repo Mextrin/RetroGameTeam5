@@ -4,23 +4,18 @@ using UnityEngine;
 
 public class HealthComponent : MonoBehaviour
 {
-    public int StartingHealth = 3;
-    int CurrentHealth;
+    public int Health;
+    public int Damage;
 
-    private void Awake()
+    public void DamageTaken()
     {
-        CurrentHealth = StartingHealth;
-    }
-
-    public void Damage(int damage)
-    {
-        CurrentHealth -= damage;
-        Debug.Log(CurrentHealth.ToString());
+        Damage -= Health;
+        Debug.Log(Health.ToString());
     }
 
     void Death()
     {
-        if (StartingHealth <= 0)
+        if (Health <= 0)
         {
             Destroy(gameObject);
         }
