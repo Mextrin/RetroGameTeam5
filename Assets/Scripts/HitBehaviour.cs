@@ -9,7 +9,9 @@ public class HitBehaviour : MonoBehaviour
     [HideInInspector]
     public float timeDown;
     public float resetTime = 3;
+    public float speed = 3;
 
+    LocalPlayer localPlayer;
     Rigidbody2D rigidbody;
     SpriteRenderer spriteRenderer;
     public Sprite notFrozen, frozen;
@@ -17,8 +19,14 @@ public class HitBehaviour : MonoBehaviour
     private void Awake()
     {
         timeDown = resetTime;
+        localPlayer = GameObject.FindObjectOfType<LocalPlayer>()?.GetComponent<LocalPlayer>();
         rigidbody = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+
+    private void Update()
+    {
+        this.transform.position = Vector2.MoveTowards(this.transform.position, localPlayer.transform.position, speed * Time.deltaTime);
     }
 
     public void HasBeenHit(bool bHit)
@@ -44,7 +52,7 @@ public class HitBehaviour : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        LocalPlayer localPlayer = collision.gameObject.GetComponent<LocalPlayer>();
+        localPlayer = collision.gameObject.GetComponent<LocalPlayer>();
         HealthComponent healthComponent = GetComponent<HealthComponent>();
         if (localPlayer && localPlayer.onGround == false && isFrozen == true)
         {
