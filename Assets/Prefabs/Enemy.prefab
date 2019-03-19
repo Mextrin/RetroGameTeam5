@@ -62,8 +62,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94d89e33ca2be9c42b620b2cc80f46e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 1
-  Damage: 1
+  StartingHealth: 1
 --- !u!212 &1905831108174438755
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -176,5 +175,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94d89e33ca2be9c42b620b2cc80f46e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 0
-  Damage: 0
+  StartingHealth: 3
