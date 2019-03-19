@@ -20,6 +20,7 @@ public class LocalPlayer : MonoBehaviour
     SpriteRenderer spriteRenderer;
     LaunchBall ball;
     HealthComponent healthComponent;
+    Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +30,7 @@ public class LocalPlayer : MonoBehaviour
         rigidbody = GetComponent<Rigidbody2D>();
         input = GetComponent<ControllerInput>();
         healthComponent = GetComponent<HealthComponent>();
+        animator = GetComponent<Animator>();
         
     }
 
@@ -42,8 +44,15 @@ public class LocalPlayer : MonoBehaviour
 
             rigidbody.velocity = new Vector2(moveHorizontal * 100, rigidbody.velocity.y);
             //transform.Translate(new Vector2(moveHorizontal, 0));
-            if (moveHorizontal < 0) spriteRenderer.flipX = true;
-            else if (moveHorizontal > 0) spriteRenderer.flipX = false;
+            if (moveHorizontal < 0)
+            {
+                spriteRenderer.flipX = true;
+            }
+            else if (moveHorizontal > 0)
+            {
+                spriteRenderer.flipX = false;
+            }
+                
 
             //Jumping
             bool jump = Input.GetButtonDown(input.Jump);

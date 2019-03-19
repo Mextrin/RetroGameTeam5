@@ -12,13 +12,11 @@ public class LaunchBall : MonoBehaviour
     [SerializeField] private float LaunchForce;
 
     Rigidbody2D BallRb2D;
-    HitBehaviour hitBehaviour;
     #endregion Variabels
     
     
     private void Awake()
     {
-        hitBehaviour = GameObject.FindObjectOfType<HitBehaviour>()?.GetComponent<HitBehaviour>();
         BallRb2D = GetComponent<Rigidbody2D>();
     }
 
@@ -38,10 +36,8 @@ public class LaunchBall : MonoBehaviour
     
      private void OnCollisionEnter2D(Collision2D collision)
      {
-        if (collision.gameObject.layer == 9)
-        {
-            hitBehaviour.HasBeenHit(true);
-        }
+        HitBehaviour hitBehaviour;
+        collision.gameObject.GetComponent<HitBehaviour>()?.HasBeenHit(true);
      } 
     
 //      private void OnGUI()
