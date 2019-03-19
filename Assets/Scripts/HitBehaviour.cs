@@ -26,7 +26,11 @@ public class HitBehaviour : MonoBehaviour
 
     private void Update()
     {
-        this.transform.position = Vector2.MoveTowards(this.transform.position, localPlayer.transform.position, speed * Time.deltaTime);
+        if (!isFrozen)
+        {
+            this.transform.position = Vector2.MoveTowards(this.transform.position, localPlayer.transform.position, speed * Time.deltaTime);
+        }
+
     }
 
     public void HasBeenHit(bool bHit)
