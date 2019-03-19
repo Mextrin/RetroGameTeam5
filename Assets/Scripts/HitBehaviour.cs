@@ -12,24 +12,26 @@ public class HitBehaviour : MonoBehaviour
 
     Rigidbody2D rigidbody;
     SpriteRenderer spriteRenderer;
-    Sprite notFrozen, frozen;
+    public Sprite notFrozen, frozen;
 
     private void Awake()
     {
         timeDown = resetTime;
         rigidbody = GetComponent<Rigidbody2D>();
-        notFrozen = Resources.Load<Sprite>("EnemySprite");
-        frozen = Resources.Load<Sprite>("Frozen");
-        
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     public void HasBeenHit(bool bHit)
     {
-        Debug.Log("FREEZE");
-        /*spriteRenderer.sprite = frozen;*/
-        isFrozen = true;
-        rigidbody.bodyType = RigidbodyType2D.Static;
-        Invoke("FreezeTime", timeDown);
+        if (!isFrozen)
+        {
+            Debug.Log("FREEZE");
+            spriteRenderer.sprite = frozen;
+            isFrozen = true;
+            rigidbody.bodyType = RigidbodyType2D.Static;
+            Invoke("FreezeTime", timeDown);
+        }
+        
     }
 
     private void FreezeTime()

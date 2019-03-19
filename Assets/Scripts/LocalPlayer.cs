@@ -42,8 +42,8 @@ public class LocalPlayer : MonoBehaviour
 
             rigidbody.velocity = new Vector2(moveHorizontal * 100, rigidbody.velocity.y);
             //transform.Translate(new Vector2(moveHorizontal, 0));
-            if (moveHorizontal < 0) spriteRenderer.flipX = false;
-            else if (moveHorizontal > 0) spriteRenderer.flipX = true;
+            if (moveHorizontal < 0) spriteRenderer.flipX = true;
+            else if (moveHorizontal > 0) spriteRenderer.flipX = false;
 
             //Jumping
             bool jump = Input.GetButtonDown(input.Jump);

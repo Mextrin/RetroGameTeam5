@@ -345,6 +345,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3007404284650171979, guid: b12d909543543f74a9587b5221557f6c,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300020, guid: e4ae70a0c46fe3644b0c48c0d07ce109,
+        type: 3}
+    - target: {fileID: 3007404284650171979, guid: b12d909543543f74a9587b5221557f6c,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 5.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3007404284650171979, guid: b12d909543543f74a9587b5221557f6c,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 5.12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b12d909543543f74a9587b5221557f6c, type: 3}
 --- !u!1 &914310867
@@ -578,6 +594,18 @@ PrefabInstance:
     - target: {fileID: 1905831108174438755, guid: c933d844dcb63934eb3e7428b6469e63,
         type: 3}
       propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 72de0c64f2c6a498096698322c976a67,
+        type: 3}
+    - target: {fileID: 1437967581582858754, guid: c933d844dcb63934eb3e7428b6469e63,
+        type: 3}
+      propertyPath: frozen
+      value: 
+      objectReference: {fileID: 21300000, guid: d01b0b4f13e044d0c83c424e542ddcbf,
+        type: 3}
+    - target: {fileID: 1437967581582858754, guid: c933d844dcb63934eb3e7428b6469e63,
+        type: 3}
+      propertyPath: notFrozen
       value: 
       objectReference: {fileID: 21300000, guid: 72de0c64f2c6a498096698322c976a67,
         type: 3}
@@ -889,62 +917,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6608228632877074333, guid: 1392fb47a76db944b80881993ea14ccd,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6608228632877074333, guid: 1392fb47a76db944b80881993ea14ccd,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 415772886052963612, guid: 1392fb47a76db944b80881993ea14ccd,
-        type: 3}
-      propertyPath: LaunchForce
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 1974871236936848114, guid: 1392fb47a76db944b80881993ea14ccd,
-        type: 3}
-      propertyPath: m_BodyType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1974871236936848114, guid: 1392fb47a76db944b80881993ea14ccd,
-        type: 3}
-      propertyPath: m_LinearDrag
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1974871236936848114, guid: 1392fb47a76db944b80881993ea14ccd,
-        type: 3}
-      propertyPath: m_AngularDrag
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1974871236936848114, guid: 1392fb47a76db944b80881993ea14ccd,
-        type: 3}
-      propertyPath: m_GravityScale
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1974871236936848114, guid: 1392fb47a76db944b80881993ea14ccd,
-        type: 3}
-      propertyPath: m_Mass
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4147722008396365158, guid: 1392fb47a76db944b80881993ea14ccd,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: e48d2c695d1267b43bcfdcb6446d5bd6,
-        type: 3}
-    - target: {fileID: 6010312825028846734, guid: 1392fb47a76db944b80881993ea14ccd,
-        type: 3}
-      propertyPath: m_Radius
-      value: 0.95
-      objectReference: {fileID: 0}
-    - target: {fileID: 6291793481599069905, guid: 1392fb47a76db944b80881993ea14ccd,
-        type: 3}
-      propertyPath: m_Radius
-      value: 0.67
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1392fb47a76db944b80881993ea14ccd, type: 3}

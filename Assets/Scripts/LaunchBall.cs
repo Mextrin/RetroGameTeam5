@@ -30,7 +30,7 @@ public class LaunchBall : MonoBehaviour
         if (distance <= 1)
         {
             Debug.Log("LAUNCH!");
-/*            BallRb2D.gravityScale = 1;*/
+/*          BallRb2D.gravityScale = 1;*/
             BallRb2D.bodyType = RigidbodyType2D.Dynamic;
             BallRb2D.velocity += vel;
         }

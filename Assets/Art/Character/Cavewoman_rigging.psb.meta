@@ -2,90 +2,8 @@ fileFormatVersion: 2
 guid: e4ae70a0c46fe3644b0c48c0d07ce109
 ScriptedImporter:
   fileIDToRecycleName:
-    100000: Arm_right_GO/Arm_right_GO
-    100002: Arm_right_GO/Arm_right_GO/Arm_left
-    100004: Arm_right_GO/Arm_right_GO/Arm_right
-    100006: Arm_right_GO/Arm_right_GO/Body
-    100008: Arm_right_GO/Arm_right_GO/Face
-    100010: Arm_right_GO/Arm_right_GO/Hair_left
-    100012: Arm_right_GO/Arm_right_GO/Hair_right
-    100014: Arm_right_GO/Arm_right_GO/Leg_left
-    100016: Arm_right_GO/Arm_right_GO/Leg_right
-    100018: Arm_right_GO/Arm_right_GO/Racoon_body
-    100020: Arm_right_GO/Arm_right_GO/Racoon_tail
-    100022: Arm_right_GO/Arm_right_GO/Spine_lower/Spine_upper/Spine_upper_1
-    100024: Arm_right_GO/Arm_right_GO/Spine_lower/Spine_upper/Spine_upper_1/Spine_upper_2
-    100026: Arm_right_GO/Arm_right_GO/Spine_lower
-    100028: Arm_right_GO/Arm_right_GO/Spine_lower/Left_leg
-    100030: Arm_right_GO/Arm_right_GO/Spine_lower/Right_leg
-    100032: Arm_right_GO/Arm_right_GO/Spine_lower/Spine_upper
-    100034: Arm_right_GO/Arm_right_GO/Spine_lower/Spine_upper/Left_upper_arm
-    100036: Arm_right_GO/Arm_right_GO/Spine_lower/Spine_upper/Left_upper_arm/Left_lower_arm
-    100038: Arm_right_GO/Arm_right_GO/Spine_lower/Spine_upper/Right_upper_arm
-    100040: Arm_right_GO/Arm_right_GO/Spine_lower/Spine_upper/Right_upper_arm/Right_lower_arm
-    100042: Arm_right_GO/Arm_right_GO/Spine_lower/Spine_upper/Spine_upper_1/Spine_upper_3
-    100050: Arm_right_GO/Arm_right_GO/Spine_lower/Spine_upper/bone_4
-    100054: Arm_right_GO/Arm_right_GO/Spine_lower/Spine_upper/bone_4/bone_5
-    100056: Arm_right_GO/Arm_right_GO/Spine_lower/Spine_upper/bone_4/bone_6
-    100058: Arm_right_GO/Arm_right_GO/Spine_lower/Spine_upper/bone_4/Racoon_tail_bone
-    400000: Arm_right_GO/Arm_right_GO/Transform
-    400002: Arm_right_GO/Arm_right_GO/Arm_left/Transform
-    400004: Arm_right_GO/Arm_right_GO/Arm_right/Transform
-    400006: Arm_right_GO/Arm_right_GO/Body/Transform
-    400008: Arm_right_GO/Arm_right_GO/Face/Transform
-    400010: Arm_right_GO/Arm_right_GO/Hair_left/Transform
-    400012: Arm_right_GO/Arm_right_GO/Hair_right/Transform
-    400014: Arm_right_GO/Arm_right_GO/Leg_left/Transform
-    400016: Arm_right_GO/Arm_right_GO/Leg_right/Transform
-    400018: Arm_right_GO/Arm_right_GO/Racoon_body/Transform
-    400020: Arm_right_GO/Arm_right_GO/Racoon_tail/Transform
-    400022: Arm_right_GO/Arm_right_GO/Spine_lower/Spine_upper/Spine_upper_1/Transform
-    400024: Arm_right_GO/Arm_right_GO/Spine_lower/Spine_upper/Spine_upper_1/Spine_upper_2/Transform
-    400026: Arm_right_GO/Arm_right_GO/Spine_lower/Transform
-    400028: Arm_right_GO/Arm_right_GO/Spine_lower/Left_leg/Transform
-    400030: Arm_right_GO/Arm_right_GO/Spine_lower/Right_leg/Transform
-    400032: Arm_right_GO/Arm_right_GO/Spine_lower/Spine_upper/Transform
-    400034: Arm_right_GO/Arm_right_GO/Spine_lower/Spine_upper/Left_upper_arm/Transform
-    400036: Arm_right_GO/Arm_right_GO/Spine_lower/Spine_upper/Left_upper_arm/Left_lower_arm/Transform
-    400038: Arm_right_GO/Arm_right_GO/Spine_lower/Spine_upper/Right_upper_arm/Transform
-    400040: Arm_right_GO/Arm_right_GO/Spine_lower/Spine_upper/Right_upper_arm/Right_lower_arm/Transform
-    400042: Arm_right_GO/Arm_right_GO/Spine_lower/Spine_upper/Spine_upper_1/Spine_upper_3/Transform
-    400050: Arm_right_GO/Arm_right_GO/Spine_lower/Spine_upper/bone_4/Transform
-    400054: Arm_right_GO/Arm_right_GO/Spine_lower/Spine_upper/bone_4/bone_5/Transform
-    400056: Arm_right_GO/Arm_right_GO/Spine_lower/Spine_upper/bone_4/bone_6/Transform
-    400058: Arm_right_GO/Arm_right_GO/Spine_lower/Spine_upper/bone_4/Racoon_tail_bone/Transform
     2800002: Cavewoman_rigging
-    11400000: Arm_right_GO/Arm_right_GO/Arm_left/MonoBehaviour-UnityEngine.Experimental.U2D.Animation.SpriteSkin
-    11400002: Arm_right_GO/Arm_right_GO/Arm_right/MonoBehaviour-UnityEngine.Experimental.U2D.Animation.SpriteSkin
-    11400004: Arm_right_GO/Arm_right_GO/Body/MonoBehaviour-UnityEngine.Experimental.U2D.Animation.SpriteSkin
-    11400006: Arm_right_GO/Arm_right_GO/Face/MonoBehaviour-UnityEngine.Experimental.U2D.Animation.SpriteSkin
-    11400008: Arm_right_GO/Arm_right_GO/Leg_left/MonoBehaviour-UnityEngine.Experimental.U2D.Animation.SpriteSkin
-    11400010: Arm_right_GO/Arm_right_GO/Leg_right/MonoBehaviour-UnityEngine.Experimental.U2D.Animation.SpriteSkin
-    11400012: Arm_right_GO/Arm_right_GO/Racoon_body/MonoBehaviour-UnityEngine.Experimental.U2D.Animation.SpriteSkin
-    11400014: Arm_right_GO/Arm_right_GO/Racoon_tail/MonoBehaviour-UnityEngine.Experimental.U2D.Animation.SpriteSkin
-    11400016: Arm_right_GO/Arm_right_GO/Hair_left/MonoBehaviour-UnityEngine.Experimental.U2D.Animation.SpriteSkin
-    11400018: Arm_right_GO/Arm_right_GO/Hair_right/MonoBehaviour-UnityEngine.Experimental.U2D.Animation.SpriteSkin
-    21200000: Arm_right_GO/Arm_right_GO/Arm_left/SpriteRenderer
-    21200002: Arm_right_GO/Arm_right_GO/Arm_right/SpriteRenderer
-    21200004: Arm_right_GO/Arm_right_GO/Body/SpriteRenderer
-    21200006: Arm_right_GO/Arm_right_GO/Face/SpriteRenderer
-    21200008: Arm_right_GO/Arm_right_GO/Hair_left/SpriteRenderer
-    21200010: Arm_right_GO/Arm_right_GO/Hair_right/SpriteRenderer
-    21200012: Arm_right_GO/Arm_right_GO/Leg_left/SpriteRenderer
-    21200014: Arm_right_GO/Arm_right_GO/Leg_right/SpriteRenderer
-    21200016: Arm_right_GO/Arm_right_GO/Racoon_body/SpriteRenderer
-    21200018: Arm_right_GO/Arm_right_GO/Racoon_tail/SpriteRenderer
-    21300000: Face
-    21300002: Hair_left
-    21300004: Hair_right
-    21300006: Racoon_tail
-    21300008: Racoon_body
-    21300010: Arm_left
-    21300012: Body
-    21300014: Leg_left
-    21300016: Leg_right
-    21300018: Arm_right
-    100100000: Arm_right_GO
+    21300020: Cavewoman_rigging_1
   externalObjects: {}
   userData: 
   assetBundleName: 
@@ -109,7 +27,7 @@ ScriptedImporter:
     streamingMipmapsPriority: 0
     nPOTScale: 1
     sRGBTexture: 1
-    spriteMode: 2
+    spriteMode: 1
     spriteExtrude: 1
     spriteMeshType: 1
     alignment: 0
@@ -145,18 +63,18 @@ ScriptedImporter:
     compressionQualitySet: 0
     textureFormatSet: 0
   spriteImportData:
-  - name: 
+  - name: Cavewoman_rigging_1
     originalName: 
-    pivot: {x: 0, y: 0}
+    pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 0
-      height: 0
-    spriteID: 
+      width: 512
+      height: 512
+    spriteID: 91750bbaf1960844a807c7e82574cb4c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -4647,35 +4565,5 @@ ScriptedImporter:
       spriteId: 1aa48b73236d3fa419db898d3273c41f
       bones: 0300000002000000
     dimension: {x: 0, y: 0}
-  boneGOs:
-  - go: {fileID: 100026, guid: e4ae70a0c46fe3644b0c48c0d07ce109, type: 3}
-    index: 0
-  - go: {fileID: 100032, guid: e4ae70a0c46fe3644b0c48c0d07ce109, type: 3}
-    index: 1
-  - go: {fileID: 100038, guid: e4ae70a0c46fe3644b0c48c0d07ce109, type: 3}
-    index: 2
-  - go: {fileID: 100040, guid: e4ae70a0c46fe3644b0c48c0d07ce109, type: 3}
-    index: 3
-  - go: {fileID: 100034, guid: e4ae70a0c46fe3644b0c48c0d07ce109, type: 3}
-    index: 4
-  - go: {fileID: 100036, guid: e4ae70a0c46fe3644b0c48c0d07ce109, type: 3}
-    index: 5
-  - go: {fileID: 100028, guid: e4ae70a0c46fe3644b0c48c0d07ce109, type: 3}
-    index: 6
-  - go: {fileID: 100030, guid: e4ae70a0c46fe3644b0c48c0d07ce109, type: 3}
-    index: 7
-  - go: {fileID: 100022, guid: e4ae70a0c46fe3644b0c48c0d07ce109, type: 3}
-    index: 8
-  - go: {fileID: 100024, guid: e4ae70a0c46fe3644b0c48c0d07ce109, type: 3}
-    index: 9
-  - go: {fileID: 100042, guid: e4ae70a0c46fe3644b0c48c0d07ce109, type: 3}
-    index: 10
-  - go: {fileID: 100050, guid: e4ae70a0c46fe3644b0c48c0d07ce109, type: 3}
-    index: 11
-  - go: {fileID: 100054, guid: e4ae70a0c46fe3644b0c48c0d07ce109, type: 3}
-    index: 12
-  - go: {fileID: 100056, guid: e4ae70a0c46fe3644b0c48c0d07ce109, type: 3}
-    index: 13
-  - go: {fileID: 100058, guid: e4ae70a0c46fe3644b0c48c0d07ce109, type: 3}
-    index: 14
+  boneGOs: []
   generateGOHierarchy: 0
