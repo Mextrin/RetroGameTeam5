@@ -1,0 +1,502 @@
+fileFormatVersion: 2
+guid: 32cb4188c02f6f7469a5409c58963ff2
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: Mouth_interior_GO/Mouth_interior_GO
+    100002: Mouth_interior_GO/Mouth_interior_GO/Back_leg
+    100004: Mouth_interior_GO/Mouth_interior_GO/Body
+    100006: Mouth_interior_GO/Mouth_interior_GO/Ear_behind
+    100008: Mouth_interior_GO/Mouth_interior_GO/Ear_outside
+    100010: Mouth_interior_GO/Mouth_interior_GO/Frontal_left_leg
+    100012: Mouth_interior_GO/Mouth_interior_GO/Frontal_right_leg
+    100014: Mouth_interior_GO/Mouth_interior_GO/Head
+    100016: Mouth_interior_GO/Mouth_interior_GO/lamp
+    100018: Mouth_interior_GO/Mouth_interior_GO/Mouth_interior
+    100020: Mouth_interior_GO/Mouth_interior_GO/nail
+    100022: Mouth_interior_GO/Mouth_interior_GO/Scissor_down
+    100024: Mouth_interior_GO/Mouth_interior_GO/Scissor_up
+    400000: Mouth_interior_GO/Mouth_interior_GO/Transform
+    400002: Mouth_interior_GO/Mouth_interior_GO/Back_leg/Transform
+    400004: Mouth_interior_GO/Mouth_interior_GO/Body/Transform
+    400006: Mouth_interior_GO/Mouth_interior_GO/Ear_behind/Transform
+    400008: Mouth_interior_GO/Mouth_interior_GO/Ear_outside/Transform
+    400010: Mouth_interior_GO/Mouth_interior_GO/Frontal_left_leg/Transform
+    400012: Mouth_interior_GO/Mouth_interior_GO/Frontal_right_leg/Transform
+    400014: Mouth_interior_GO/Mouth_interior_GO/Head/Transform
+    400016: Mouth_interior_GO/Mouth_interior_GO/lamp/Transform
+    400018: Mouth_interior_GO/Mouth_interior_GO/Mouth_interior/Transform
+    400020: Mouth_interior_GO/Mouth_interior_GO/nail/Transform
+    400022: Mouth_interior_GO/Mouth_interior_GO/Scissor_down/Transform
+    400024: Mouth_interior_GO/Mouth_interior_GO/Scissor_up/Transform
+    2800000: Enemy_01
+    21200000: Mouth_interior_GO/Mouth_interior_GO/Back_leg/SpriteRenderer
+    21200002: Mouth_interior_GO/Mouth_interior_GO/Body/SpriteRenderer
+    21200004: Mouth_interior_GO/Mouth_interior_GO/Ear_behind/SpriteRenderer
+    21200006: Mouth_interior_GO/Mouth_interior_GO/Ear_outside/SpriteRenderer
+    21200008: Mouth_interior_GO/Mouth_interior_GO/Frontal_left_leg/SpriteRenderer
+    21200010: Mouth_interior_GO/Mouth_interior_GO/Frontal_right_leg/SpriteRenderer
+    21200012: Mouth_interior_GO/Mouth_interior_GO/Head/SpriteRenderer
+    21200014: Mouth_interior_GO/Mouth_interior_GO/lamp/SpriteRenderer
+    21200016: Mouth_interior_GO/Mouth_interior_GO/Mouth_interior/SpriteRenderer
+    21200018: Mouth_interior_GO/Mouth_interior_GO/nail/SpriteRenderer
+    21200020: Mouth_interior_GO/Mouth_interior_GO/Scissor_down/SpriteRenderer
+    21200022: Mouth_interior_GO/Mouth_interior_GO/Scissor_up/SpriteRenderer
+    21300000: nail
+    21300002: Scissor_down
+    21300004: Scissor_up
+    21300006: Back_leg
+    21300008: Frontal_left_leg
+    21300010: lamp
+    21300012: Ear_outside
+    21300014: Body
+    21300016: Frontal_right_leg
+    21300018: Head
+    21300020: Ear_behind
+    21300022: Mouth_interior
+    100100000: Mouth_interior_GO
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: nail
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 201
+      y: 171
+      width: 27
+      height: 27
+    spriteID: da761bf620bccb740bff69e9c040cd76
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 167, y: 127}
+  - name: Scissor_down
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 149
+      y: 171
+      width: 44
+      height: 30
+    spriteID: 5d8f7e37c85642e429f6f58e3cdba879
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 146, y: 140}
+  - name: Scissor_up
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 392
+      width: 37
+      height: 33
+    spriteID: 6aa415d6916120d4bba18a1c3b924c6b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -4, y: 333}
+  - name: Back_leg
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 29
+      y: 433
+      width: 14
+      height: 23
+    spriteID: 34d031361b182754d9e281ff7f784e9d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -40, y: 417}
+  - name: Frontal_left_leg
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 433
+      width: 17
+      height: 31
+    spriteID: 0bac160125827224493d4655d9c2ccfc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -123, y: 421}
+  - name: lamp
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 149
+      y: 100
+      width: 84
+      height: 63
+    spriteID: b39c0179cd0046f408bc8d8fbcffa858
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -9, y: -68}
+  - name: Ear_outside
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 189
+      y: 4
+      width: 45
+      height: 63
+    spriteID: 2fe2f909ab725244380bb7a9adc0b979
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 105, y: -95}
+  - name: Body
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 177
+      height: 88
+    spriteID: a4f7956ecd109994b85224590a7b674f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -48, y: -22}
+  - name: Frontal_right_leg
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 472
+      width: 17
+      height: 31
+    spriteID: 7713f20e59075a644ad02be092283ca5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -188, y: 461}
+  - name: Head
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 100
+      width: 137
+      height: 103
+    spriteID: 511b80c387b42d24192057c2dc6c9de5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -108, y: 31}
+  - name: Ear_behind
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 328
+      width: 40
+      height: 56
+    spriteID: 8aa1bdad0e973be45888610b8d8356c7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -209, y: 228}
+  - name: Mouth_interior
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 211
+      width: 119
+      height: 109
+    spriteID: c5ac2a118706ac14c8799a8e19ece3c1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -110, y: 172}
+  platformSettings: []
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 256
+  importedTextureHeight: 512
+  documentSize: {x: 266, y: 238}
+  textureActualWidth: 256
+  textureActualHeight: 512
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: nemy_01
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 
+    layerID: 28
+    mosaicPosition: {x: 0, y: 0}
+  - name: nail
+    spriteName: nail
+    isGroup: 0
+    parentIndex: 0
+    spriteID: da761bf620bccb740bff69e9c040cd76
+    layerID: 18
+    mosaicPosition: {x: 201, y: 171}
+  - name: Scissor_down
+    spriteName: Scissor_down
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 5d8f7e37c85642e429f6f58e3cdba879
+    layerID: 22
+    mosaicPosition: {x: 149, y: 171}
+  - name: Scissor_up
+    spriteName: Scissor_up
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 6aa415d6916120d4bba18a1c3b924c6b
+    layerID: 20
+    mosaicPosition: {x: 4, y: 392}
+  - name: Back_leg
+    spriteName: Back_leg
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 34d031361b182754d9e281ff7f784e9d
+    layerID: 16
+    mosaicPosition: {x: 29, y: 433}
+  - name: Frontal_left_leg
+    spriteName: Frontal_left_leg
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 0bac160125827224493d4655d9c2ccfc
+    layerID: 14
+    mosaicPosition: {x: 4, y: 433}
+  - name: lamp
+    spriteName: lamp
+    isGroup: 0
+    parentIndex: 0
+    spriteID: b39c0179cd0046f408bc8d8fbcffa858
+    layerID: 8
+    mosaicPosition: {x: 149, y: 100}
+  - name: Ear_outside
+    spriteName: Ear_outside
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 2fe2f909ab725244380bb7a9adc0b979
+    layerID: 6
+    mosaicPosition: {x: 189, y: 4}
+  - name: Body
+    spriteName: Body
+    isGroup: 0
+    parentIndex: 0
+    spriteID: a4f7956ecd109994b85224590a7b674f
+    layerID: 27
+    mosaicPosition: {x: 4, y: 4}
+  - name: Frontal_right_leg
+    spriteName: Frontal_right_leg
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 7713f20e59075a644ad02be092283ca5
+    layerID: 12
+    mosaicPosition: {x: 4, y: 472}
+  - name: Head
+    spriteName: Head
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 511b80c387b42d24192057c2dc6c9de5
+    layerID: 26
+    mosaicPosition: {x: 4, y: 100}
+  - name: Ear_behind
+    spriteName: Ear_behind
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 8aa1bdad0e973be45888610b8d8356c7
+    layerID: 24
+    mosaicPosition: {x: 4, y: 328}
+  - name: Mouth_interior
+    spriteName: Mouth_interior
+    isGroup: 0
+    parentIndex: 0
+    spriteID: c5ac2a118706ac14c8799a8e19ece3c1
+    layerID: 10
+    mosaicPosition: {x: 4, y: 211}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+  boneGOs: []
+  generateGOHierarchy: 0
