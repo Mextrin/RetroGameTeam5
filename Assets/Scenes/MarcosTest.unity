@@ -526,56 +526,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &752558675
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 752558677}
-  - component: {fileID: 752558676}
-  m_Layer: 0
-  m_Name: --Spawner--
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &752558676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 752558675}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a01b65bc73fd02b45acbfbe0b7242d45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxEnemyCount: 3
-  Prefab:
-  - {fileID: 1905831108174438780, guid: c933d844dcb63934eb3e7428b6469e63, type: 3}
-  SpawnPoints:
-  - {x: 10.450855, y: 2.8578749}
-  - {x: -11.40348, y: 3.0259848}
-  spawnCooldown: 6
---- !u!4 &752558677
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 752558675}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.02, y: 2.1, z: -0.12695312}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &790630119
 GameObject:
   m_ObjectHideFlags: 0
@@ -1610,12 +1560,12 @@ PrefabInstance:
     - target: {fileID: 3141736745481377444, guid: f1839e74e44975f45ac2ec7d930d76e6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.68
+      value: 5.75
       objectReference: {fileID: 0}
     - target: {fileID: 3141736745481377444, guid: f1839e74e44975f45ac2ec7d930d76e6,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.9560785
+      value: -3.99
       objectReference: {fileID: 0}
     - target: {fileID: 3141736745481377444, guid: f1839e74e44975f45ac2ec7d930d76e6,
         type: 3}
@@ -1687,6 +1637,16 @@ PrefabInstance:
       propertyPath: healthMeat3
       value: 
       objectReference: {fileID: 790630119}
+    - target: {fileID: 1987105517927298600, guid: f1839e74e44975f45ac2ec7d930d76e6,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 4de7cb372d03d1445bb136db0f296759, type: 2}
+    - target: {fileID: 1987105517927298600, guid: f1839e74e44975f45ac2ec7d930d76e6,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1839e74e44975f45ac2ec7d930d76e6, type: 3}
 --- !u!1 &1329701995

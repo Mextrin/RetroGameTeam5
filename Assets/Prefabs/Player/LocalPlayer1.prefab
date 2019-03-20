@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  jumpForce: 6.5
+  jumpForce: 8
   onGround: 0
 --- !u!60 &3187164123350562419
 PolygonCollider2D:
