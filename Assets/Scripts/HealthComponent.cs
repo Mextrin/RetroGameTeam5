@@ -10,9 +10,12 @@ public class HealthComponent : MonoBehaviour
     public GameObject healthMeat1, healthMeat2, healthMeat3;
 
     GameManager gameManager;
+    LocalPlayer localPlayer;
 
     private void Awake()
     {
+        localPlayer = GetComponent<LocalPlayer>();
+
         CurrentHealth = StartingHealth;
         healthMeat1.gameObject.SetActive(true);
         healthMeat2.gameObject.SetActive(true);
@@ -53,7 +56,7 @@ public class HealthComponent : MonoBehaviour
     {
         if (CurrentHealth <= 0)
         {
-            Destroy(gameObject);
+            Destroy(localPlayer.gameObject);
         }
     }
 }

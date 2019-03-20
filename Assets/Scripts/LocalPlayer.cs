@@ -11,7 +11,6 @@ public class LocalPlayer : MonoBehaviour
     [Header("Movement")]
     [SerializeField] float speed = 5f;
     [SerializeField] float jumpForce = 6.5f;
-    [SerializeField] int damageDone = 1;
     [HideInInspector] public bool onGround;
 
     Sprite sprite;
