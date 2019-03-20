@@ -44,6 +44,7 @@ public class HealthComponent : MonoBehaviour
                 healthMeat1.gameObject.SetActive(false);
                 healthMeat2.gameObject.SetActive(false);
                 healthMeat3.gameObject.SetActive(false);
+                Death();
                 break;
         }
     }
