@@ -70,6 +70,11 @@ public class LocalPlayer : MonoBehaviour
                 }
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            healthComponent.Damage(1);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

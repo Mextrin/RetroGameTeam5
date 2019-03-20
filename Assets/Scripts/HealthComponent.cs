@@ -20,7 +20,25 @@ public class HealthComponent : MonoBehaviour
     public void Damage(int damage)
     {
         CurrentHealth -= damage;
-        Debug.Log(CurrentHealth.ToString());
+
+        switch (CurrentHealth)
+        {
+            case 3:
+                healthMeat1.gameObject.SetActive(true);
+                healthMeat2.gameObject.SetActive(true);
+                healthMeat3.gameObject.SetActive(true);
+                break;
+            case 2:
+                healthMeat1.gameObject.SetActive(true);
+                healthMeat2.gameObject.SetActive(false);
+                healthMeat3.gameObject.SetActive(false);
+                break;
+            case 1:
+                healthMeat1.gameObject.SetActive(false);
+                healthMeat2.gameObject.SetActive(false);
+                healthMeat3.gameObject.SetActive(false);
+                break;
+        }
     }
 
     void Death()
