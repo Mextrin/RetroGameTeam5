@@ -35,6 +35,12 @@ public class GameManager : MonoBehaviour
         else
         {
             //Both players dead
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         }
+    }
+
+    public void PlayerDead(LocalPlayer player)
+    {
+        players.Remove(player);
     }
 }

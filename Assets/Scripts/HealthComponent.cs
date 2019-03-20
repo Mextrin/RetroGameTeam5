@@ -56,7 +56,9 @@ public class HealthComponent : MonoBehaviour
     {
         if (CurrentHealth <= 0)
         {
-            Destroy(localPlayer.gameObject);
+            /*Destroy(localPlayer.gameObject);*/
+            FindObjectOfType<GameManager>()?.GetComponent<GameManager>()?.PlayerDead(GetComponent<LocalPlayer>());
+            Destroy(gameObject);
         }
     }
 }
