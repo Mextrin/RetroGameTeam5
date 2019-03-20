@@ -15,6 +15,7 @@ public class LocalPlayer : MonoBehaviour
 
     Sprite sprite;
 
+    
     Rigidbody2D rigidbody;
     SpriteRenderer spriteRenderer;
     LaunchBall ball;
@@ -71,7 +72,7 @@ public class LocalPlayer : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.layer == 8)
         {
@@ -79,7 +80,7 @@ public class LocalPlayer : MonoBehaviour
         }
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.layer == 8)
         {

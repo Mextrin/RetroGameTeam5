@@ -15,6 +15,7 @@ public class HitBehaviour : MonoBehaviour
     Rigidbody2D rigidbody;
     SpriteRenderer spriteRenderer;
     public Sprite notFrozen, frozen;
+    public GameObject player, ball, ennemy;
 
     private void Awake()
     {
