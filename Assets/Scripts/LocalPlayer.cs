@@ -14,7 +14,6 @@ public class LocalPlayer : MonoBehaviour
     [HideInInspector] public bool onGround;
 
     Sprite sprite;
-
     
     Rigidbody2D rigidbody;
     SpriteRenderer spriteRenderer;

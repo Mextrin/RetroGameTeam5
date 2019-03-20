@@ -73,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300018, guid: 8f32b7a43ef21e3468f5a81678944864, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -225,6 +225,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingHealth: 3
+  CurrentHealth: 0
+  healthMeat1: {fileID: 0}
+  healthMeat2: {fileID: 0}
+  healthMeat3: {fileID: 0}
 --- !u!114 &7166498207104228009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -251,7 +255,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   jumpForce: 6.5
-  damageDone: 1
   onGround: 0
 --- !u!95 &1987105517927298600
 Animator:
@@ -263,7 +266,7 @@ Animator:
   m_GameObject: {fileID: 7372813093703213644}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b8b5dc67af02c2c40a9c4cbdbe9e40e0, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
