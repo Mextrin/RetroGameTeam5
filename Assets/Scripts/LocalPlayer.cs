@@ -11,11 +11,10 @@ public class LocalPlayer : MonoBehaviour
     [Header("Movement")]
     [SerializeField] float speed = 5f;
     [SerializeField] float jumpForce = 6.5f;
-    [SerializeField] int damageDone = 1;
     [HideInInspector] public bool onGround;
 
     Sprite sprite;
-
+    
     Rigidbody2D rigidbody;
     SpriteRenderer spriteRenderer;
     LaunchBall ball;
@@ -72,7 +71,7 @@ public class LocalPlayer : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.layer == 8)
         {
@@ -80,7 +79,7 @@ public class LocalPlayer : MonoBehaviour
         }
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.layer == 8)
         {

@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300020, guid: e4ae70a0c46fe3644b0c48c0d07ce109, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -118,6 +118,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingHealth: 3
+  CurrentHealth: 0
+  healthMeat1: {fileID: 0}
+  healthMeat2: {fileID: 0}
+  healthMeat3: {fileID: 0}
 --- !u!114 &7166498207104228009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,7 +148,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   jumpForce: 6.5
-  damageDone: 1
   onGround: 0
 --- !u!60 &3187164123350562419
 PolygonCollider2D:
