@@ -112,56 +112,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &143977587
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 143977589}
-  - component: {fileID: 143977588}
-  m_Layer: 0
-  m_Name: EnemySpawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &143977588
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 143977587}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a01b65bc73fd02b45acbfbe0b7242d45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxEnemyCount: 3
-  Prefab:
-  - {fileID: 1905831108174438780, guid: c933d844dcb63934eb3e7428b6469e63, type: 3}
-  SpawnPoints:
-  - {x: 6.6923203, y: 1.5204762}
-  - {x: -6.6409817, y: 1.7975587}
-  spawnCooldown: 7
---- !u!4 &143977589
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 143977587}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &176720576
 GameObject:
   m_ObjectHideFlags: 0
@@ -690,7 +640,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 790630119}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.59, y: 0.01, z: 0}
+  m_LocalPosition: {x: -11.38, y: 0.01, z: 0}
   m_LocalScale: {x: 3.333333, y: 3.333333, z: 1}
   m_Children: []
   m_Father: {fileID: 1329701997}
@@ -1040,7 +990,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1268438766}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.09, y: 0.01, z: 0}
+  m_LocalPosition: {x: -8.13, y: 0.01, z: 0}
   m_LocalScale: {x: 3.333333, y: 3.333333, z: 1}
   m_Children: []
   m_Father: {fileID: 1329701997}
@@ -1166,6 +1116,21 @@ PrefabInstance:
       propertyPath: m_FlipX
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5307547679439420350, guid: f1839e74e44975f45ac2ec7d930d76e6,
+        type: 3}
+      propertyPath: healthMeat1
+      value: 
+      objectReference: {fileID: 1179990061}
+    - target: {fileID: 5307547679439420350, guid: f1839e74e44975f45ac2ec7d930d76e6,
+        type: 3}
+      propertyPath: healthMeat2
+      value: 
+      objectReference: {fileID: 1268438766}
+    - target: {fileID: 5307547679439420350, guid: f1839e74e44975f45ac2ec7d930d76e6,
+        type: 3}
+      propertyPath: healthMeat3
+      value: 
+      objectReference: {fileID: 790630119}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1839e74e44975f45ac2ec7d930d76e6, type: 3}
 --- !u!1 &1329701995

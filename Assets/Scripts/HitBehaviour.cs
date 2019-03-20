@@ -63,7 +63,7 @@ public class HitBehaviour : MonoBehaviour
             Debug.Log("Hit by player");
             Destroy(gameObject);
         }
-        else if (!isFrozen && collision.gameObject == localPlayer.gameObject)
+        else if (!isFrozen && localPlayer)
         {
             damage.Damage(1);
         }

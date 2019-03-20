@@ -50,7 +50,7 @@ public class HealthComponent : MonoBehaviour
 
     void Death()
     {
-        if (StartingHealth <= 0)
+        if (CurrentHealth <= 0)
         {
             Destroy(gameObject);
         }
