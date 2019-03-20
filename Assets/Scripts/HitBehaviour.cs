@@ -26,7 +26,7 @@ public class HitBehaviour : MonoBehaviour
 
     private void Update()
     {
-//         if (!isFrozen && ((Vector2.Distance(transform.position, localPlayer.transform.position) > 3)))
+//         if (!isFrozen && ((Vector2.Distance(transform.position, localPlayer.transform.position) > 1)))
 //         {
 //             this.transform.position = Vector2.MoveTowards(this.transform.position, localPlayer.transform.position, speed * Time.deltaTime);
 //         }
@@ -56,16 +56,16 @@ public class HitBehaviour : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         localPlayer = collision.gameObject.GetComponent<LocalPlayer>();
-        HealthComponent healthComponent = GetComponent<HealthComponent>();
+        HealthComponent damage = collision.gameObject.GetComponent<HealthComponent>();
+        
         if (localPlayer && localPlayer.onGround == false && isFrozen == true)
         {
             Debug.Log("Hit by player");
             Destroy(gameObject);
         }
-//         if (localPlayer && !isFrozen)
-//         {
-//             healthComponent.Damage(1);
-//         }
-        
+        else if (!isFrozen && collision.gameObject == localPlayer.gameObject)
+        {
+            damage.Damage(1);
+        }
     }
 }
