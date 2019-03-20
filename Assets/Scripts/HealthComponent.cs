@@ -9,6 +9,8 @@ public class HealthComponent : MonoBehaviour
 
     public GameObject healthMeat1, healthMeat2, healthMeat3;
 
+    GameManager gameManager;
+
     private void Awake()
     {
         CurrentHealth = StartingHealth;
@@ -30,10 +32,15 @@ public class HealthComponent : MonoBehaviour
                 break;
             case 2:
                 healthMeat1.gameObject.SetActive(true);
-                healthMeat2.gameObject.SetActive(false);
+                healthMeat2.gameObject.SetActive(true);
                 healthMeat3.gameObject.SetActive(false);
                 break;
             case 1:
+                healthMeat1.gameObject.SetActive(true);
+                healthMeat2.gameObject.SetActive(false);
+                healthMeat3.gameObject.SetActive(false);
+                break;
+            case 0:
                 healthMeat1.gameObject.SetActive(false);
                 healthMeat2.gameObject.SetActive(false);
                 healthMeat3.gameObject.SetActive(false);
