@@ -16,7 +16,6 @@ public class LocalPlayer : MonoBehaviour
     Sprite sprite;
     
     Rigidbody2D rigidbody;
-    SpriteRenderer spriteRenderer;
     LaunchBall ball;
     HealthComponent healthComponent;
     Animator animator;
@@ -25,12 +24,10 @@ public class LocalPlayer : MonoBehaviour
     void Start()
     {
         ball = GameObject.FindObjectOfType<LaunchBall>()?.GetComponent<LaunchBall>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
         rigidbody = GetComponent<Rigidbody2D>();
         input = GetComponent<ControllerInput>();
         healthComponent = GetComponent<HealthComponent>();
-        animator = GetComponent<Animator>();
-        
+        animator = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
@@ -46,17 +43,9 @@ public class LocalPlayer : MonoBehaviour
         {
             //Moving
             float moveHorizontal = Input.GetAxis(input.Horizontal) * speed * Time.deltaTime;
+            animator.SetBool("isWalking", (Mathf.Approximately(moveHorizontal, 0) ? false : true));
 
             rigidbody.velocity = new Vector2(moveHorizontal * 100, rigidbody.velocity.y);
-            //transform.Translate(new Vector2(moveHorizontal, 0));
-            if (moveHorizontal < 0)
-            {
-                spriteRenderer.flipX = true;
-            }
-            else if (moveHorizontal > 0)
-            {
-                spriteRenderer.flipX = false;
-            }
         }
     }
 
@@ -69,6 +58,7 @@ public class LocalPlayer : MonoBehaviour
             if (jump && onGround)
             {
                 rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                animator.SetBool("isJumping", true);
             }
 
             //Launching
