@@ -11,6 +11,9 @@ public class HitBehaviour : MonoBehaviour
     public float resetTime = 3;
     public float speed = 3;
 
+    public GameObject Player1, Player2;
+
+
     LocalPlayer localPlayer;
     Rigidbody2D rigidbody;
     SpriteRenderer spriteRenderer;
@@ -28,7 +31,7 @@ public class HitBehaviour : MonoBehaviour
     {
         if (localPlayer)
         {
-            if (!isFrozen && ((Vector2.Distance(transform.position, localPlayer.transform.position) > 1)))
+            if (!isFrozen && (((Vector2.Distance(transform.position, Player1.transform.position) > 1)) || ((Vector2.Distance(transform.position, Player2.transform.position) > 1))))
             {
                 this.transform.position = Vector2.MoveTowards(this.transform.position, localPlayer.transform.position, speed * Time.deltaTime);
             }
@@ -67,6 +70,7 @@ public class HitBehaviour : MonoBehaviour
             if (localPlayer && localPlayer.onGround == false && isFrozen == true)
             {
                 Debug.Log("Hit by player");
+                
                 Destroy(gameObject);
             }
             else if (!isFrozen && localPlayer)
