@@ -67,7 +67,7 @@ public class HitBehaviour : MonoBehaviour
             if (localPlayer && localPlayer.onGround == false && isFrozen == true)
             {
                 Debug.Log("Hit by player");
-                Camera.shake
+                
                 Destroy(gameObject);
             }
             else if (!isFrozen && localPlayer)
