@@ -27,7 +27,7 @@ public class LocalPlayer : MonoBehaviour
         rigidbody = GetComponent<Rigidbody2D>();
         input = GetComponent<ControllerInput>();
         healthComponent = GetComponent<HealthComponent>();
-        animator = GetComponent<Animator>();
+        animator = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
@@ -58,6 +58,7 @@ public class LocalPlayer : MonoBehaviour
             if (jump && onGround)
             {
                 rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                animator.SetBool("isJumping", true);
             }
 
             //Launching
