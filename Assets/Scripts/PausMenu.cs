@@ -9,9 +9,8 @@ public class PausMenu : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Pause)) ;
+        if (Input.GetKeyDown(KeyCode.Joystick1Button7))
         {
-            Debug.Log("PAUSED");
             if (gameIsPaused)
             {
                 Resume();
@@ -25,15 +24,17 @@ public class PausMenu : MonoBehaviour
 
     void Paus()
     {
-        pauseMenuUI.SetActive(false);
-        Time.timeScale = 1f;
-        gameIsPaused = false;
+        Debug.Log("PAUSED");
+        pauseMenuUI.SetActive(true);
+        Time.timeScale = 0f;
+        gameIsPaused = true;
     }
 
     void Resume()
     {
-        pauseMenuUI.SetActive(true);
-        Time.timeScale = 0f;
-        gameIsPaused = true;
+        Debug.Log("Resume");
+        pauseMenuUI.SetActive(false);
+        Time.timeScale = 1f;
+        gameIsPaused = false;
     }
 }
