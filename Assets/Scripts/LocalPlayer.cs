@@ -36,6 +36,12 @@ public class LocalPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Moving();
+        Jump();
+    }
+
+    void Moving()
+    {
         if (input.ConnectedController)
         {
             //Moving
@@ -51,15 +57,20 @@ public class LocalPlayer : MonoBehaviour
             {
                 spriteRenderer.flipX = false;
             }
-                
+        }
+    }
 
+    void Jump()
+    {
+        if (input.ConnectedController)
+        {
             //Jumping
             bool jump = Input.GetButtonDown(input.Jump);
             if (jump && onGround)
             {
                 rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             }
-        
+
             //Launching
             if (ball)
             {
@@ -71,7 +82,7 @@ public class LocalPlayer : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.layer == 8)
         {
@@ -79,7 +90,7 @@ public class LocalPlayer : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.layer == 8)
         {

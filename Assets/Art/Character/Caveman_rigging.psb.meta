@@ -2,8 +2,87 @@ fileFormatVersion: 2
 guid: 8f32b7a43ef21e3468f5a81678944864
 ScriptedImporter:
   fileIDToRecycleName:
+    100000: Arm_right_GO/Arm_right_GO
+    100002: Arm_right_GO/Arm_right_GO/Arm_left
+    100004: Arm_right_GO/Arm_right_GO/Arm_right
+    100006: Arm_right_GO/Arm_right_GO/Beard
+    100008: Arm_right_GO/Arm_right_GO/Body
+    100010: Arm_right_GO/Arm_right_GO/bone_2
+    100012: Arm_right_GO/Arm_right_GO/bone_2/bone_1
+    100014: Arm_right_GO/Arm_right_GO/bone_2/bone_1/bone_8
+    100016: Arm_right_GO/Arm_right_GO/bone_2/bone_1/bone_9
+    100018: Arm_right_GO/Arm_right_GO/bone_2/bone_3
+    100020: Arm_right_GO/Arm_right_GO/bone_2/bone_4
+    100022: Arm_right_GO/Arm_right_GO/bone_2/bone_4/bone_5
+    100024: Arm_right_GO/Arm_right_GO/bone_2/bone_6
+    100026: Arm_right_GO/Arm_right_GO/bone_2/bone_6/bone_7
+    100028: Arm_right_GO/Arm_right_GO/bone_2/bone_10
+    100030: Arm_right_GO/Arm_right_GO/bone_2/bone_11
+    100032: Arm_right_GO/Arm_right_GO/bone_2/bone_12
+    100034: Arm_right_GO/Arm_right_GO/bone_2/bone_12/bone_13
+    100036: Arm_right_GO/Arm_right_GO/bone_2/bone_12/bone_14
+    100038: Arm_right_GO/Arm_right_GO/bone_2/bone_15
+    100040: Arm_right_GO/Arm_right_GO/bone_2/bone_15/bone_16
+    100042: Arm_right_GO/Arm_right_GO/Face
+    100044: Arm_right_GO/Arm_right_GO/Fur
+    100046: Arm_right_GO/Arm_right_GO/Hat
+    100048: Arm_right_GO/Arm_right_GO/Leg_left
+    100050: Arm_right_GO/Arm_right_GO/Leg_right
+    400000: Arm_right_GO/Arm_right_GO/Transform
+    400002: Arm_right_GO/Arm_right_GO/Arm_left/Transform
+    400004: Arm_right_GO/Arm_right_GO/Arm_right/Transform
+    400006: Arm_right_GO/Arm_right_GO/Beard/Transform
+    400008: Arm_right_GO/Arm_right_GO/Body/Transform
+    400010: Arm_right_GO/Arm_right_GO/bone_2/Transform
+    400012: Arm_right_GO/Arm_right_GO/bone_2/bone_1/Transform
+    400014: Arm_right_GO/Arm_right_GO/bone_2/bone_1/bone_8/Transform
+    400016: Arm_right_GO/Arm_right_GO/bone_2/bone_1/bone_9/Transform
+    400018: Arm_right_GO/Arm_right_GO/bone_2/bone_3/Transform
+    400020: Arm_right_GO/Arm_right_GO/bone_2/bone_4/Transform
+    400022: Arm_right_GO/Arm_right_GO/bone_2/bone_4/bone_5/Transform
+    400024: Arm_right_GO/Arm_right_GO/bone_2/bone_6/Transform
+    400026: Arm_right_GO/Arm_right_GO/bone_2/bone_6/bone_7/Transform
+    400028: Arm_right_GO/Arm_right_GO/bone_2/bone_10/Transform
+    400030: Arm_right_GO/Arm_right_GO/bone_2/bone_11/Transform
+    400032: Arm_right_GO/Arm_right_GO/bone_2/bone_12/Transform
+    400034: Arm_right_GO/Arm_right_GO/bone_2/bone_12/bone_13/Transform
+    400036: Arm_right_GO/Arm_right_GO/bone_2/bone_12/bone_14/Transform
+    400038: Arm_right_GO/Arm_right_GO/bone_2/bone_15/Transform
+    400040: Arm_right_GO/Arm_right_GO/bone_2/bone_15/bone_16/Transform
+    400042: Arm_right_GO/Arm_right_GO/Face/Transform
+    400044: Arm_right_GO/Arm_right_GO/Fur/Transform
+    400046: Arm_right_GO/Arm_right_GO/Hat/Transform
+    400048: Arm_right_GO/Arm_right_GO/Leg_left/Transform
+    400050: Arm_right_GO/Arm_right_GO/Leg_right/Transform
     2800002: Caveman_rigging
-    21300018: Caveman_rigging_1
+    11400000: Arm_right_GO/Arm_right_GO/Arm_left/MonoBehaviour-UnityEngine.Experimental.U2D.Animation.SpriteSkin
+    11400002: Arm_right_GO/Arm_right_GO/Arm_right/MonoBehaviour-UnityEngine.Experimental.U2D.Animation.SpriteSkin
+    11400004: Arm_right_GO/Arm_right_GO/Beard/MonoBehaviour-UnityEngine.Experimental.U2D.Animation.SpriteSkin
+    11400006: Arm_right_GO/Arm_right_GO/Body/MonoBehaviour-UnityEngine.Experimental.U2D.Animation.SpriteSkin
+    11400008: Arm_right_GO/Arm_right_GO/Face/MonoBehaviour-UnityEngine.Experimental.U2D.Animation.SpriteSkin
+    11400010: Arm_right_GO/Arm_right_GO/Fur/MonoBehaviour-UnityEngine.Experimental.U2D.Animation.SpriteSkin
+    11400012: Arm_right_GO/Arm_right_GO/Hat/MonoBehaviour-UnityEngine.Experimental.U2D.Animation.SpriteSkin
+    11400014: Arm_right_GO/Arm_right_GO/Leg_left/MonoBehaviour-UnityEngine.Experimental.U2D.Animation.SpriteSkin
+    11400016: Arm_right_GO/Arm_right_GO/Leg_right/MonoBehaviour-UnityEngine.Experimental.U2D.Animation.SpriteSkin
+    21200000: Arm_right_GO/Arm_right_GO/Arm_left/SpriteRenderer
+    21200002: Arm_right_GO/Arm_right_GO/Arm_right/SpriteRenderer
+    21200004: Arm_right_GO/Arm_right_GO/Beard/SpriteRenderer
+    21200006: Arm_right_GO/Arm_right_GO/Body/SpriteRenderer
+    21200008: Arm_right_GO/Arm_right_GO/Face/SpriteRenderer
+    21200010: Arm_right_GO/Arm_right_GO/Fur/SpriteRenderer
+    21200012: Arm_right_GO/Arm_right_GO/Hat/SpriteRenderer
+    21200014: Arm_right_GO/Arm_right_GO/Leg_left/SpriteRenderer
+    21200016: Arm_right_GO/Arm_right_GO/Leg_right/SpriteRenderer
+    21300000: Fur
+    21300002: Hat
+    21300004: Face
+    21300006: Beard
+    21300008: Arm_left
+    21300010: Body
+    21300012: Leg_right
+    21300014: Leg_left
+    21300016: Arm_right
+    100100000: Arm_right_GO
   externalObjects: {}
   userData: 
   assetBundleName: 
@@ -27,7 +106,7 @@ ScriptedImporter:
     streamingMipmapsPriority: 0
     nPOTScale: 1
     sRGBTexture: 1
-    spriteMode: 1
+    spriteMode: 2
     spriteExtrude: 1
     spriteMeshType: 1
     alignment: 0
@@ -4304,5 +4383,37 @@ ScriptedImporter:
       spriteId: 5112b1ea79b5ff4419c43ed7a81e366a
       bones: 060000000500000001000000
     dimension: {x: 0, y: 0}
-  boneGOs: []
+  boneGOs:
+  - go: {fileID: 100012, guid: 8f32b7a43ef21e3468f5a81678944864, type: 3}
+    index: 0
+  - go: {fileID: 100010, guid: 8f32b7a43ef21e3468f5a81678944864, type: 3}
+    index: 1
+  - go: {fileID: 100018, guid: 8f32b7a43ef21e3468f5a81678944864, type: 3}
+    index: 2
+  - go: {fileID: 100020, guid: 8f32b7a43ef21e3468f5a81678944864, type: 3}
+    index: 3
+  - go: {fileID: 100022, guid: 8f32b7a43ef21e3468f5a81678944864, type: 3}
+    index: 4
+  - go: {fileID: 100024, guid: 8f32b7a43ef21e3468f5a81678944864, type: 3}
+    index: 5
+  - go: {fileID: 100026, guid: 8f32b7a43ef21e3468f5a81678944864, type: 3}
+    index: 6
+  - go: {fileID: 100014, guid: 8f32b7a43ef21e3468f5a81678944864, type: 3}
+    index: 7
+  - go: {fileID: 100016, guid: 8f32b7a43ef21e3468f5a81678944864, type: 3}
+    index: 8
+  - go: {fileID: 100028, guid: 8f32b7a43ef21e3468f5a81678944864, type: 3}
+    index: 9
+  - go: {fileID: 100030, guid: 8f32b7a43ef21e3468f5a81678944864, type: 3}
+    index: 10
+  - go: {fileID: 100032, guid: 8f32b7a43ef21e3468f5a81678944864, type: 3}
+    index: 11
+  - go: {fileID: 100034, guid: 8f32b7a43ef21e3468f5a81678944864, type: 3}
+    index: 12
+  - go: {fileID: 100036, guid: 8f32b7a43ef21e3468f5a81678944864, type: 3}
+    index: 13
+  - go: {fileID: 100038, guid: 8f32b7a43ef21e3468f5a81678944864, type: 3}
+    index: 14
+  - go: {fileID: 100040, guid: 8f32b7a43ef21e3468f5a81678944864, type: 3}
+    index: 15
   generateGOHierarchy: 0

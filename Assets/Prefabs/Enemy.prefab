@@ -49,6 +49,8 @@ MonoBehaviour:
   timeDown: 0
   resetTime: 3
   speed: 3
+  Player1: {fileID: 7372813093703213644, guid: b12d909543543f74a9587b5221557f6c, type: 3}
+  Player2: {fileID: 7372813093703213644, guid: f1839e74e44975f45ac2ec7d930d76e6, type: 3}
   notFrozen: {fileID: 21300000, guid: 72de0c64f2c6a498096698322c976a67, type: 3}
   frozen: {fileID: 21300000, guid: d01b0b4f13e044d0c83c424e542ddcbf, type: 3}
 --- !u!212 &1905831108174438755

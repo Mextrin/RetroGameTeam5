@@ -254,7 +254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  jumpForce: 6.5
+  jumpForce: 7
   onGround: 0
 --- !u!95 &1987105517927298600
 Animator:
