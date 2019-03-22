@@ -25,7 +25,7 @@ public class LaunchBall : MonoBehaviour
         Vector2 vel = Vector3.Normalize(transform.position - targetPosition) * LaunchForce;
         float distance = Vector3.Distance(targetPosition, transform.position);
 
-        if (distance <= 1)
+        if (distance <= 2)
         {
             Debug.Log("LAUNCH!");
 /*          BallRb2D.gravityScale = 1;*/
