@@ -43,7 +43,7 @@ public class HitBehaviour : MonoBehaviour
         if (!isFrozen)
         {
             Debug.Log("FREEZE");
-            spriteRenderer.sprite = frozen;
+          /*  spriteRenderer.sprite = frozen;*/
             isFrozen = true;
             rigidbody.bodyType = RigidbodyType2D.Static;
             Invoke("FreezeTime", timeDown);
@@ -54,7 +54,7 @@ public class HitBehaviour : MonoBehaviour
     private void FreezeTime()
     {
         Debug.Log("FREE");
-        spriteRenderer.sprite = notFrozen;
+        /*spriteRenderer.sprite = notFrozen;*/
         isFrozen = false;   
         rigidbody.bodyType = RigidbodyType2D.Dynamic;
     }
