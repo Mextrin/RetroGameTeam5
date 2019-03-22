@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
         else
         {
             //Both players dead
+            ControllerInput.FlushControllers();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         }
     }

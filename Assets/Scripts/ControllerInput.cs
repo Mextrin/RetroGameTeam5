@@ -13,6 +13,11 @@ public class ControllerInput : MonoBehaviour
     public string Jump { get { return "Controller" + controllerID + "Jump"; } }
     public string Action { get { return "Controller" + controllerID + "Action"; } }
 
+    public static void FlushControllers()
+    {
+        assignedControllers.Clear();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
