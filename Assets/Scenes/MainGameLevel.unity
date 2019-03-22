@@ -1872,6 +1872,127 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 1075431764}
+--- !u!1001 &910343719
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7370790850222782524, guid: fce4f90170079f840a6d3bd93f04f06b,
+        type: 3}
+      propertyPath: m_Name
+      value: --EnemySpawner-- (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 272346350561642288, guid: fce4f90170079f840a6d3bd93f04f06b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.0491824
+      objectReference: {fileID: 0}
+    - target: {fileID: 272346350561642288, guid: fce4f90170079f840a6d3bd93f04f06b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.35645
+      objectReference: {fileID: 0}
+    - target: {fileID: 272346350561642288, guid: fce4f90170079f840a6d3bd93f04f06b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.099609375
+      objectReference: {fileID: 0}
+    - target: {fileID: 272346350561642288, guid: fce4f90170079f840a6d3bd93f04f06b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 272346350561642288, guid: fce4f90170079f840a6d3bd93f04f06b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 272346350561642288, guid: fce4f90170079f840a6d3bd93f04f06b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 272346350561642288, guid: fce4f90170079f840a6d3bd93f04f06b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 272346350561642288, guid: fce4f90170079f840a6d3bd93f04f06b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 272346350561642288, guid: fce4f90170079f840a6d3bd93f04f06b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 272346350561642288, guid: fce4f90170079f840a6d3bd93f04f06b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 272346350561642288, guid: fce4f90170079f840a6d3bd93f04f06b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3287188668964603578, guid: fce4f90170079f840a6d3bd93f04f06b,
+        type: 3}
+      propertyPath: Prefab.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3287188668964603578, guid: fce4f90170079f840a6d3bd93f04f06b,
+        type: 3}
+      propertyPath: SpawnPoints.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3287188668964603578, guid: fce4f90170079f840a6d3bd93f04f06b,
+        type: 3}
+      propertyPath: maxEnemyCount
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3287188668964603578, guid: fce4f90170079f840a6d3bd93f04f06b,
+        type: 3}
+      propertyPath: Prefab.Array.data[0]
+      value: 
+      objectReference: {fileID: 3270923185388051829, guid: c7abf336f15561541bc446e710143ae7,
+        type: 3}
+    - target: {fileID: 3287188668964603578, guid: fce4f90170079f840a6d3bd93f04f06b,
+        type: 3}
+      propertyPath: spawnCooldown
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3287188668964603578, guid: fce4f90170079f840a6d3bd93f04f06b,
+        type: 3}
+      propertyPath: SpawnPoints.Array.data[0].y
+      value: -2.1745586
+      objectReference: {fileID: 0}
+    - target: {fileID: 3287188668964603578, guid: fce4f90170079f840a6d3bd93f04f06b,
+        type: 3}
+      propertyPath: SpawnPoints.Array.data[1].y
+      value: -4.675539
+      objectReference: {fileID: 0}
+    - target: {fileID: 3287188668964603578, guid: fce4f90170079f840a6d3bd93f04f06b,
+        type: 3}
+      propertyPath: Prefab.Array.data[1]
+      value: 
+      objectReference: {fileID: 3270923185388051829, guid: c7abf336f15561541bc446e710143ae7,
+        type: 3}
+    - target: {fileID: 3287188668964603578, guid: fce4f90170079f840a6d3bd93f04f06b,
+        type: 3}
+      propertyPath: SpawnPoints.Array.data[0].x
+      value: -7.5859017
+      objectReference: {fileID: 0}
+    - target: {fileID: 3287188668964603578, guid: fce4f90170079f840a6d3bd93f04f06b,
+        type: 3}
+      propertyPath: SpawnPoints.Array.data[1].x
+      value: 3.7493553
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fce4f90170079f840a6d3bd93f04f06b, type: 3}
 --- !u!1 &920662347
 GameObject:
   m_ObjectHideFlags: 0
@@ -3933,6 +4054,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6010312825028846734, guid: 1392fb47a76db944b80881993ea14ccd,
+        type: 3}
+      propertyPath: m_Radius
+      value: 1.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 601246114, guid: 1392fb47a76db944b80881993ea14ccd, type: 3}
+      propertyPath: maxSpeed
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1392fb47a76db944b80881993ea14ccd, type: 3}
 --- !u!1 &1825257934
@@ -4813,7 +4943,7 @@ PrefabInstance:
     - target: {fileID: 3287188668964603578, guid: fce4f90170079f840a6d3bd93f04f06b,
         type: 3}
       propertyPath: Prefab.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3287188668964603578, guid: fce4f90170079f840a6d3bd93f04f06b,
         type: 3}
@@ -4834,7 +4964,7 @@ PrefabInstance:
     - target: {fileID: 3287188668964603578, guid: fce4f90170079f840a6d3bd93f04f06b,
         type: 3}
       propertyPath: spawnCooldown
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3287188668964603578, guid: fce4f90170079f840a6d3bd93f04f06b,
         type: 3}
