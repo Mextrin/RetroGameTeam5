@@ -1554,6 +1554,7 @@ GameObject:
   - component: {fileID: 3270923185387946261}
   - component: {fileID: 3270923186491175570}
   - component: {fileID: 4246413549741259406}
+  - component: {fileID: 6587735805333436195}
   m_Layer: 9
   m_Name: Enemy_01
   m_TagString: Untagged
@@ -1607,8 +1608,8 @@ MonoBehaviour:
   timeDown: 0
   resetTime: 3
   speed: 3
-  Player1: {fileID: 0}
-  Player2: {fileID: 0}
+  Player1: {fileID: 1297562145087835349, guid: aa4bd0c5789afd84d9a362f27343aef2, type: 3}
+  Player2: {fileID: 5413668691648232577, guid: 1a6c44c209fbec740bd52f930dabcd40, type: 3}
   notFrozen: {fileID: 0}
   frozen: {fileID: 0}
 --- !u!58 &4246413549741259406
@@ -1627,6 +1628,27 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.85}
   serializedVersion: 2
   m_Radius: 1.17
+--- !u!50 &6587735805333436195
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3270923185388051829}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &3270923185388051831
 GameObject:
   m_ObjectHideFlags: 0

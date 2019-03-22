@@ -9,7 +9,7 @@ public class HitBehaviour : MonoBehaviour
     [HideInInspector]
     public float timeDown;
     public float resetTime = 3;
-    public float speed = 3;
+    public float speed = 2;
 
     public GameObject Player1, Player2;
 
