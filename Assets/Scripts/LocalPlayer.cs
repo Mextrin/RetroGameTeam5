@@ -14,9 +14,8 @@ public class LocalPlayer : MonoBehaviour
     [HideInInspector] public bool onGround;
 
     Sprite sprite;
-    
+
     Rigidbody2D rigidbody;
-    SpriteRenderer spriteRenderer;
     LaunchBall ball;
     HealthComponent healthComponent;
     Animator animator;
@@ -25,12 +24,10 @@ public class LocalPlayer : MonoBehaviour
     void Start()
     {
         ball = GameObject.FindObjectOfType<LaunchBall>()?.GetComponent<LaunchBall>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
         rigidbody = GetComponent<Rigidbody2D>();
         input = GetComponent<ControllerInput>();
         healthComponent = GetComponent<HealthComponent>();
-        animator = GetComponent<Animator>();
-        
+        animator = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
@@ -46,17 +43,12 @@ public class LocalPlayer : MonoBehaviour
         {
             //Moving
             float moveHorizontal = Input.GetAxis(input.Horizontal) * speed * Time.deltaTime;
+            animator.SetBool("isWalking", (Mathf.Approximately(moveHorizontal, 0) ? false : true));
+
+            if (moveHorizontal < 0) transform.localScale = new Vector3(-1, 1, 1);
+            else if (moveHorizontal > 0) transform.localScale = new Vector3(1, 1, 1);
 
             rigidbody.velocity = new Vector2(moveHorizontal * 100, rigidbody.velocity.y);
-            //transform.Translate(new Vector2(moveHorizontal, 0));
-            if (moveHorizontal < 0)
-            {
-                spriteRenderer.flipX = true;
-            }
-            else if (moveHorizontal > 0)
-            {
-                spriteRenderer.flipX = false;
-            }
         }
     }
 
@@ -87,6 +79,7 @@ public class LocalPlayer : MonoBehaviour
         if (collision.gameObject.layer == 8)
         {
             onGround = true;
+            animator.SetBool("isJumping", false);
         }
     }
 
@@ -95,6 +88,7 @@ public class LocalPlayer : MonoBehaviour
         if (collision.gameObject.layer == 8)
         {
             onGround = false;
+            animator.SetBool("isJumping", true);
         }
     }
 }
