@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     List<LocalPlayer> players = new List<LocalPlayer>();
-    // Start is called before the first frame update
+
     void Awake()
     {
         var playerObjects = FindObjectsOfType<LocalPlayer>();
@@ -15,8 +15,7 @@ public class GameManager : MonoBehaviour
             players.Add(playerObjects[i].GetComponent<LocalPlayer>());
         }
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         if (players.Count > 0)

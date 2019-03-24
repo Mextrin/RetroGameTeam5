@@ -12,25 +12,21 @@ public class LocalPlayer : MonoBehaviour
     [SerializeField] float speed = 5f;
     [SerializeField] float jumpForce = 6.5f;
     [HideInInspector] public bool onGround;
-
-    Sprite sprite;
-
+    
     Rigidbody2D rigidbody;
     LaunchBall ball;
     HealthComponent healthComponent;
     Animator animator;
-
-    // Start is called before the first frame update
+    
     void Start()
     {
-        ball = GameObject.FindObjectOfType<LaunchBall>()?.GetComponent<LaunchBall>();
+        ball = FindObjectOfType<LaunchBall>()?.GetComponent<LaunchBall>();
         rigidbody = GetComponent<Rigidbody2D>();
         input = GetComponent<ControllerInput>();
         healthComponent = GetComponent<HealthComponent>();
         animator = GetComponentInChildren<Animator>();
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         Moving();

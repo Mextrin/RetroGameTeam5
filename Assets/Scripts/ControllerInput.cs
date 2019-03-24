@@ -17,19 +17,17 @@ public class ControllerInput : MonoBehaviour
     {
         assignedControllers.Clear();
     }
-
-    // Start is called before the first frame update
+    
     void Start()
     {
+        //Makes sure player1 (keyboard) always has control in the game
         if (!assignedControllers.Contains(1))
         {
-            /*print("Assigned controller " + 1 + " to " + gameObject.name);*/
             assignedControllers.Add(1);
             controllerID = 1;
         }
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         if (controllerID <= 0)
@@ -37,10 +35,8 @@ public class ControllerInput : MonoBehaviour
             //See if any controller activates
             for (int i = 1; i <= 2; i++)
             {
-               /* print(i + " " + Input.GetButtonDown("Controller" + i + "Jump"));*/
                 if (!assignedControllers.Contains(i) && Input.GetButtonDown("Controller" + i  + "Jump"))
                 {
-                    /*print("Assigned controller " + i + " to " + gameObject.name);*/
                     controllerID = i;
                     assignedControllers.Add(i);
                 }
